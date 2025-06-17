@@ -1,0 +1,10 @@
+---
+title: "Introduction to Spatial Analysis"
+css: /Styles/website_styles.scss
+---
+
+With this lecture we transition to an entire new arena of GIS capability: spatial analysis. Exciting!
+
+<iframe class="slide-deck" src="/Lectures/Spatial_analysis_lecture1.html" height="420" width="750" style="border: 1px solid #2e3846;">
+
+</iframe>

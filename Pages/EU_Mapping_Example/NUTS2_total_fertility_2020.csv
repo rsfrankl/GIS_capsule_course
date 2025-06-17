@@ -1,0 +1,339 @@
+GEO_codes,GEO_labels,TFR_2020
+ES70,Canarias,0.88
+ES12,Principado de Asturias,0.92
+ITG2,Sardegna,0.97
+ES11,Galicia,1.02
+ITF2,Molise,1.06
+ES13,Cantabria,1.07
+ES41,Castilla y León,1.10
+ES53,Illes Balears,1.12
+MT00,Malta,1.13
+ITF5,Basilicata,1.14
+PT30,Região Autónoma da Madeira (PT),1.15
+ITI2,Umbria,1.16
+ES30,Comunidad de Madrid,1.16
+ITI1,Toscana,1.17
+ITF1,Abruzzo,1.17
+HU11,Budapest,1.17
+ITI4,Lazio,1.18
+ITF4,Puglia,1.18
+ITI3,Marche,1.19
+ES24,Aragón,1.20
+ES43,Extremadura,1.20
+PL72,Swietokrzyskie,1.20
+AL03,Jug,1.21
+ES52,Comunitat Valenciana,1.21
+ES42,Castilla-la Mancha,1.22
+PT20,Região Autónoma dos Açores (PT),1.23
+ITC3,Liguria,1.23
+ITC2,Valle d'Aosta/Vallée d'Aoste,1.23
+ES51,Cataluña,1.23
+EL64,Sterea Ellada,1.24
+ITC1,Piemonte,1.25
+ES21,País Vasco,1.25
+EL54,Ipeiros,1.25
+ES61,Andalucía,1.25
+PT11,Norte,1.26
+ITF6,Calabria,1.26
+PT16,Centro (PT),1.26
+ITH4,Friuli-Venezia Giulia,1.26
+ITH5,Emilia-Romagna,1.26
+ITC4,Lombardia,1.27
+AL02,Qender,1.27
+PL42,Zachodniopomorskie,1.27
+PL52,Opolskie,1.28
+ITH3,Veneto,1.28
+PL81,Lubelskie,1.28
+CH07,Ticino,1.28
+AT13,Wien,1.29
+ES23,La Rioja,1.29
+PL62,Warminsko-Mazurskie,1.30
+EL52,Kentriki Makedonia,1.30
+ITF3,Campania,1.30
+FI1B,Helsinki-Uusimaa,1.30
+TR81,"Zonguldak, Karabük, Bartin",1.31
+MK00,Severna Makedonija,1.31
+AT11,Burgenland (AT),1.32
+PL61,Kujawsko-Pomorskie,1.32
+EL61,Thessalia,1.32
+PL43,Lubuskie,1.32
+FI1C,Etelä-Suomi,1.32
+ES22,Comunidad Foral de Navarra,1.33
+EL53,Dytiki Makedonia,1.33
+ITG1,Sicilia,1.33
+PL82,Podkarpackie,1.33
+PL22,Slaskie,1.34
+EL51,"Anatoliki Makedonia, Thraki",1.34
+PL71,Lódzkie,1.35
+PL84,Podlaskie,1.35
+PL51,Dolnoslaskie,1.35
+EL63,Dytiki Ellada,1.35
+FRM0,Corse,1.36
+LU00,Luxembourg,1.36
+CY00,Kypros,1.36
+ITH2,Provincia Autonoma di Trento,1.36
+LT01,Sostines regionas,1.37
+NL11,Groningen,1.37
+RS22,Region Juzne i Istocne Srbije,1.37
+BG32,Severen tsentralen,1.38
+DE30,Berlin,1.38
+EL65,Peloponnisos,1.38
+FI19,Länsi-Suomi,1.39
+EL30,Attiki,1.39
+TR31,Izmir,1.39
+SK02,Západné Slovensko,1.40
+NO02,Innlandet,1.40
+NO07,Nord-Norge,1.41
+AT22,Steiermark,1.41
+CH04,Zürich,1.42
+TR51,Ankara,1.42
+NL42,Limburg (NL),1.42
+DE60,Hamburg,1.42
+PL92,Mazowiecki regionalny,1.43
+DED5,Leipzig,1.43
+AT21,Kärnten,1.43
+NL32,Noord-Holland,1.43
+HR03,Jadranska Hrvatska,1.44
+BG41,Yugozapaden,1.44
+PT18,Alentejo,1.44
+CH01,Région lémanique,1.44
+BE22,Prov. Limburg (BE),1.45
+DEB2,Trier,1.45
+TR22,"Balikesir, Çanakkale",1.45
+ES62,Región de Murcia,1.45
+LI00,Liechtenstein,1.46
+BG33,Severoiztochen,1.46
+NO06,Trøndelag,1.46
+AT33,Tirol,1.46
+DE72,Gießen,1.46
+PL21,Malopolskie,1.47
+CH03,Nordwestschweiz,1.47
+RS11,Beogradski region,1.47
+TR10,Istanbul,1.47
+DEA2,Köln,1.48
+DEC0,Saarland,1.48
+DE12,Karlsruhe,1.48
+BE31,Prov. Brabant wallon,1.48
+CH02,Espace Mittelland,1.49
+HU22,Nyugat-Dunántúl,1.49
+AT12,Niederösterreich,1.49
+DE24,Oberfranken,1.49
+DE80,Mecklenburg-Vorpommern,1.50
+RS12,Region Vojvodine,1.50
+TR83,"Samsun, Tokat, Çorum, Amasya",1.50
+BE23,Prov. Oost-Vlaanderen,1.50
+FI1D,Pohjois- ja Itä-Suomi,1.51
+CZ01,Praha,1.51
+TR61,"Antalya, Isparta, Burdur",1.51
+DE21,Oberbayern,1.51
+SK03,Stredné Slovensko,1.51
+DE71,Darmstadt,1.51
+DEF0,Schleswig-Holstein,1.51
+TR90,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüshane",1.52
+PL41,Wielkopolskie,1.52
+TR82,"Kastamonu, Çankiri, Sinop",1.52
+RS21,Region Sumadije i Zapadne Srbije,1.52
+FI20,Åland,1.52
+ES63,Ciudad de Ceuta,1.52
+CH06,Zentralschweiz,1.53
+NL41,Noord-Brabant,1.53
+BE33,Prov. Liège,1.53
+CH05,Ostschweiz,1.53
+TR21,"Tekirdag, Edirne, Kirklareli",1.53
+IE06,Eastern and Midland,1.53
+DEA1,Düsseldorf,1.54
+TR32,"Aydin, Denizli, Mugla",1.54
+LT02,Vidurio ir vakaru Lietuvos regionas,1.54
+BE35,Prov. Namur,1.55
+NL33,Zuid-Holland,1.55
+LV00,Latvija,1.55
+DEG0,Thüringen,1.55
+AL01,Veri,1.55
+PL63,Pomorskie,1.55
+DED2,Dresden,1.55
+DEE0,Sachsen-Anhalt,1.55
+DE25,Mittelfranken,1.55
+DE50,Bremen,1.56
+EL43,Kriti,1.56
+DE91,Braunschweig,1.56
+AT32,Salzburg,1.57
+DE11,Stuttgart,1.57
+RO42,Vest,1.57
+DE13,Freiburg,1.57
+AT31,Oberösterreich,1.57
+SI04,Zahodna Slovenija,1.57
+DE40,Brandenburg,1.57
+DEB3,Rheinhessen-Pfalz,1.57
+TR41,"Bursa, Eskisehir, Bilecik",1.57
+DE26,Unterfranken,1.57
+BE25,Prov. West-Vlaanderen,1.58
+BE32,Prov. Hainaut,1.58
+HU21,Közép-Dunántúl,1.58
+DEA5,Arnsberg,1.58
+EE00,Eesti,1.58
+DE23,Oberpfalz,1.58
+FRF3,Lorraine,1.58
+DE92,Hannover,1.58
+DE22,Niederbayern,1.59
+DE73,Kassel,1.59
+EL62,Ionia Nisia,1.59
+BG42,Yuzhen tsentralen,1.59
+BE24,Prov. Vlaams-Brabant,1.59
+HU33,Dél-Alföld,1.59
+BE21,Prov. Antwerpen,1.59
+TR33,"Manisa, Afyonkarahisar, Kütahya, Usak",1.59
+SE11,Stockholm,1.59
+PL91,Warszawski stoleczny,1.60
+BE10,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,1.60
+NL31,Utrecht,1.60
+DE14,Tübingen,1.60
+BE34,Prov. Luxembourg (BE),1.61
+DK01,Hovedstaden,1.61
+HU23,Dél-Dunántúl,1.61
+SI03,Vzhodna Slovenija,1.63
+RO41,Sud-Vest Oltenia,1.63
+DEA3,Münster,1.63
+DEB1,Koblenz,1.63
+AT34,Vorarlberg,1.63
+DE27,Schwaben,1.64
+FRI1,Aquitaine,1.64
+TR42,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",1.64
+DE94,Weser-Ems,1.64
+SE12,Östra Mellansverige,1.64
+EL42,Notio Aigaio,1.64
+FRJ2,Midi-Pyrénées,1.65
+NL21,Overijssel,1.65
+SE33,Övre Norrland,1.65
+FRF1,Alsace,1.65
+NL22,Gelderland,1.66
+FRK1,Auvergne,1.66
+TR72,"Kayseri, Sivas, Yozgat",1.66
+FRI3,Poitou-Charentes,1.66
+RO32,Bucuresti - Ilfov,1.67
+DEA4,Detmold,1.67
+TR71,"Kirikkale, Aksaray, Nigde, Nevsehir, Kirsehir",1.67
+SE23,Västsverige,1.67
+DED4,Chemnitz,1.67
+CZ08,Moravskoslezsko,1.67
+DE93,Lüneburg,1.67
+SE22,Sydsverige,1.67
+HU12,Pest,1.68
+DK05,Nordjylland,1.68
+FRI2,Limousin,1.68
+SK01,Bratislavsk_ kraj,1.69
+PT17,Área Metropolitana de Lisboa,1.69
+RO11,Nord-Vest,1.69
+CZ04,Severozápad,1.69
+SE32,Mellersta Norrland,1.70
+NL12,Friesland (NL),1.70
+ES64,Ciudad de Melilla,1.71
+ITH1,Provincia Autonoma di Bolzano/Bozen,1.71
+DK03,Syddanmark,1.71
+NL34,Zeeland,1.71
+IS00,Ísland,1.72
+CZ03,Jihozápad,1.72
+IE05,Southern,1.72
+NL13,Drenthe,1.73
+SK04,V_chodné Slovensko,1.73
+NL23,Flevoland,1.73
+FRD1,Basse-Normandie,1.73
+SE31,Norra Mellansverige,1.73
+FRF2,Champagne-Ardenne,1.74
+FRC1,Bourgogne,1.75
+TRB1,"Malatya, Elazig, Bingöl, Tunceli",1.75
+CZ02,Strední Cechy,1.75
+CZ07,Strední Morava,1.75
+CZ06,Jihov_chod,1.75
+FRH0,Bretagne,1.75
+ME00,Crna Gora,1.75
+FRJ1,Languedoc-Roussillon,1.76
+DK02,Sjælland,1.76
+BG31,Severozapaden,1.76
+FRC2,Franche-Comté,1.76
+CZ05,Severov_chod,1.76
+DK04,Midtjylland,1.76
+IE04,Northern and Western,1.77
+PT15,Algarve,1.77
+RO31,Sud - Muntenia,1.78
+HU32,Észak-Alföld,1.81
+FRE2,Picardie,1.81
+FRK2,Rhône-Alpes,1.82
+FRE1,Nord-Pas-de-Calais,1.82
+TR62,"Adana, Mersin",1.82
+BG34,Yugoiztochen,1.83
+FRG0,Pays-de-la-Loire,1.83
+TR52,"Konya, Karaman",1.83
+FRD2,Haute-Normandie,1.84
+SE21,Småland med öarna,1.85
+FRB0,Centre - Val de Loire,1.86
+RO12,Centru,1.86
+RO22,Sud-Est,1.86
+FR10,Île de France,1.88
+TRA1,"Erzurum, Erzincan, Bayburt",1.88
+HU31,Észak-Magyarország,1.88
+FRY2,Martinique,1.89
+FRL0,Provence-Alpes-Côte d'Azur,1.91
+EL41,Voreio Aigaio,1.98
+TR63,"Hatay, Kahramanmaras, Osmaniye",2.14
+RO21,Nord-Est,2.17
+FRY1,Guadeloupe,2.35
+FRY4,La Réunion,2.37
+TRC1,"Gaziantep, Adiyaman, Kilis",2.44
+TRA2,"Agri, Kars, Igdir, Ardahan",2.48
+TRB2,"Van, Mus, Bitlis, Hakkari",2.58
+TRC3,"Mardin, Batman, Sirnak, Siirt",2.82
+TRC2,"Sanliurfa, Diyarbakir",3.15
+FRY3,Guyane,3.68
+FRY5,Mayotte,4.17
+HR02,Panonska Hrvatska,
+HR04,Kontinentalna Hrvatska (NUTS 2016),
+HR05,Grad Zagreb,
+HR06,Sjeverna Hrvatska,
+NO01,Oslo og Akershus (statistical region 2016),
+NO03,Sør-Østlandet (statistical region 2016),
+NO04,Agder og Rogaland (statistical region 2016),
+NO05,Vestlandet (statistical region 2016),
+NO08,Oslo og Viken,
+NO09,Agder og Sør-Østlandet,
+NO0A,Vestlandet,
+UKC1,Tees Valley and Durham,
+UKC2,Northumberland and Tyne and Wear,
+UKD1,Cumbria,
+UKD3,Greater Manchester,
+UKD4,Lancashire,
+UKD6,Cheshire,
+UKD7,Merseyside,
+UKE1,East Yorkshire and Northern Lincolnshire,
+UKE2,North Yorkshire,
+UKE3,South Yorkshire,
+UKE4,West Yorkshire,
+UKF1,Derbyshire and Nottinghamshire,
+UKF2,"Leicestershire, Rutland and Northamptonshire",
+UKF3,Lincolnshire,
+UKG1,"Herefordshire, Worcestershire and Warwickshire",
+UKG2,Shropshire and Staffordshire,
+UKG3,West Midlands,
+UKH1,East Anglia,
+UKH2,Bedfordshire and Hertfordshire,
+UKH3,Essex,
+UKI3,Inner London - West,
+UKI4,Inner London - East,
+UKI5,Outer London - East and North East,
+UKI6,Outer London - South,
+UKI7,Outer London - West and North West,
+UKJ1,"Berkshire, Buckinghamshire and Oxfordshire",
+UKJ2,"Surrey, East and West Sussex",
+UKJ3,Hampshire and Isle of Wight,
+UKJ4,Kent,
+UKK1,"Gloucestershire, Wiltshire and Bristol/Bath area",
+UKK2,Dorset and Somerset,
+UKK3,Cornwall and Isles of Scilly,
+UKK4,Devon,
+UKL1,West Wales and The Valleys,
+UKL2,East Wales,
+UKM5,North Eastern Scotland,
+UKM6,Highlands and Islands,
+UKM7,Eastern Scotland,
+UKM8,West Central Scotland,
+UKM9,Southern Scotland,
+UKN0,Northern Ireland (UK),

@@ -1,0 +1,44 @@
+---
+title: "Finding Spatial Data"
+css: /Styles/website_styles.scss
+---
+
+Spatial data can be found in lots of places! Essentially, as long as your data tells you *where* something is---place, address, lat/long--the GIS is going to have tools to import, visualize, and work with that data.
+
+## City Data Portals
+
+Many cities maintain open data portals that typically include a variety of spatial data, for example:
+
+-   [Milano](https://dati.comune.milano.it)
+-   [Paris](https://opendata.paris.fr/pages/home/)
+-   [London](https://data.london.gov.uk/topic)
+-   [San Francisco](https://datasf.org/opendata/)
+
+## Country-level Data
+
+Many countries serve up data for administrative areas, often as separate tabular and spatial data.
+
+Tip: tabular joins are often the easiest way to make these data work in a GIS environment!
+
+-   Italy
+    -   [Administrative boundaries](https://www.istat.it/it/archivio/222527)
+-   European Union
+    -   [Eurostat Database](https://ec.europa.eu/eurostat/data/database)
+    -   [GIS Boundary Files](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics)
+    -   [Gridded Data](https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution)
+-   [United Kingdom](https://geoportal.statistics.gov.uk)
+-   [United States--NHGIS](https://www.nhgis.org)
+-   [New Zealand](https://data.linz.govt.nz/data/)
+
+## Land Cover Data
+
+Often involves big rasters!
+
+-   [Europe--Copernicus](https://land.copernicus.eu/en/products/corine-land-cover)
+-   [US National Land Cover Database (NLCD)](https://www.mrlc.gov/data)
+
+## Other Cool Options
+
+*Any spreadsheet* containing latitude and longitude coordinates can be easily imported into a GIS, which opens up a world of possibility! For example:
+
+-   [Inside Airbnb](https://insideairbnb.com/explore/)

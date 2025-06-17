@@ -1,0 +1,65 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "GIS@GSSI"
+  twitter-card: false
+  open-graph: true
+  navbar:
+    right:
+      - about.qmd
+      - text: "{{< fa brands github >}}"
+        href: https://github.com/rsfrankl/GIS_capsule_course
+      - text: "{{< fa brands bluesky >}}"
+        href: https://bsky.app/profile/rsfrankl.bsky.social
+      - text: "{{< fa brands linkedin >}}"
+        href: https://www.linkedin.com/in/rachelsfranklin/
+      - text: "{{< fa envelope-open >}}"
+        href: mailto:rachel_franklin@cga.harvard.edu
+  sidebar:
+    style: "floating"
+    search: true
+    border: true
+    contents:
+      - section: "Monday"
+        contents:
+          - Pages/Introduction_page.qmd
+          - Pages/Getting_started_QGIS.qmd
+          - Pages/GIS_commandments.qmd
+          - Pages/GIS_basics.qmd
+          - Pages/Tutorial1.qmd
+      - section: "Tuesday"
+        contents:
+          - Pages/Cartography_101.qmd
+          - Pages/Tutorial2.qmd
+          - Pages/Tutorial2_part2.qmd
+          - Pages/Intro_spatial_analysis.qmd
+      - section: "Wednesday"
+        contents: 
+          - Pages/Tutorial3.qmd
+          - Pages/More_spatial_analysis.qmd
+          - Pages/Tutorial4.qmd
+      - section: "Thursday"
+        contents:
+          - Pages/Thursday.qmd
+      - section: "Friday"
+        contents:
+          - Pages/Progettino.qmd
+      - section: "Data"
+        contents:
+          - Pages/Data.qmd
+          - Pages/Finding_spatial_data.qmd
+  page-footer:
+    left: "Rachel Franklin, copyright 2025"
+    right: "Built with brute force {{< fa dumbbell >}} and [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme: [Default, Styles/website_styles.scss]
+    mainfont: Quicksand
+    toc: true
+    page-layout: full
+
+editor: visual
+

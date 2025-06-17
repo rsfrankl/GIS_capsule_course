@@ -1,0 +1,1306 @@
+[
+  {
+    "objectID": "Pages/Data.html",
+    "href": "Pages/Data.html",
+    "title": "Course Data",
+    "section": "",
+    "text": "For your progettino, you’ll locate and use your own data. See Finding spatial data for some ideas.",
+    "crumbs": [
+      "About",
+      "Data",
+      "Course Data"
+    ]
+  },
+  {
+    "objectID": "Pages/Data.html#practical-data",
+    "href": "Pages/Data.html#practical-data",
+    "title": "Course Data",
+    "section": "Practical Data",
+    "text": "Practical Data\nFor practicals, we’ll use the data below. To work with these datasets in QGIS, you’ll need to download the zipped folder and then expand and save in your preferred location (I suggest a new folder on your Desktop or in your Documents). Pay attention to where you save your data and your QGIS projects! And ideally you keep it all together in one folder!\nOnce unzipped, most data are in geopackage (gpkg) format—a container holding several spatial layers.\n\nRome Data\nEuropean Union (EU) Example\nSpatial Analysis Data\n\n\nWhere do these datasets come from?\nShort answer: a variety of places.\n\nFrom the Rome Geoportal:\n\nPopolazione Residente Istat 2011 (Population Resident ISTAT 2023)\nLuoghi della Cultura (Cultural Locations)\nZone Urbanistiche (Urban Zones)\nWaterways (Idrografia)\n\nFrom Inside Airbnb:\n\nAirBnb listings from March 2023\nRome Neighborhoods\n\nFrom Eurostat:\n\nNUTS2 Regions (2016 version)\n2020 Total Fertility Rates (table TGS00100)\n\nFrom Roma Servizi per la Mobilità\n\nRoman metro stations\n\n\nNote: Many of these datasets have been cleaned and curated to make them easier to work with for practicals!",
+    "crumbs": [
+      "About",
+      "Data",
+      "Course Data"
+    ]
+  },
+  {
+    "objectID": "Pages/Thursday.html",
+    "href": "Pages/Thursday.html",
+    "title": "Independent Work Day!",
+    "section": "",
+    "text": "There are no scheduled activities today: get caught up with material, work on progettini, and see what remaining questions you have for me!",
+    "crumbs": [
+      "About",
+      "Thursday",
+      "Independent Work Day!"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial1.html",
+    "href": "Pages/Tutorial1.html",
+    "title": "Tutorial 1:\nWorking with QGIS",
+    "section": "",
+    "text": "The point of our first tutorial is to familiarize ourselves with basic navigation of QGIS. By the end of this practical, you should know how to:",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Tutorial 1: \\\nWorking with QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial1.html#first-things-firstsome-preliminaries",
+    "href": "Pages/Tutorial1.html#first-things-firstsome-preliminaries",
+    "title": "Tutorial 1:\nWorking with QGIS",
+    "section": "First Things First—Some Preliminaries",
+    "text": "First Things First—Some Preliminaries\n\nMake sure you’ve downloaded the Rome_Data file from Course Data. The data are in a zipped folder, so your first task is to unzip the folder so the GIS can recognize the data. Save the unzipped folder to your GIS_course folder (or whatever you nsmed it!).\nLocate and open QGIS. You should see an interface similar to below. The default upper left window in QGIS is your Browser—here you can navigate to files stored locally on your computer, but also connect to online data sources, and more.\nExpand Home and scroll until you find your Desktop. If you right click on the GIS_course folder, you can add it as a  “Favorite”. This is especially helpful when you want to be able to navigate to your data quickly, without searching through sub-folders.\n\n\n\n\n\n\n\nChoose to start a new project. This is the paper icon  on the menu bar or via the Project pulldown menu (Project&gt;New).\nSave your project (Project&gt;Save) or the disk icon . Important: save your project into your Rome_Data folder. The default locations to save projects and data can make it difficult to remember later where your project is located. And—remember—projects don’t save data; so keeping them together in the same folder is safest.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Tutorial 1: \\\nWorking with QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial1.html#adding-data-and-getting-started",
+    "href": "Pages/Tutorial1.html#adding-data-and-getting-started",
+    "title": "Tutorial 1:\nWorking with QGIS",
+    "section": "Adding Data and Getting Started (!!)",
+    "text": "Adding Data and Getting Started (!!)\n\nExpand the Tutorial_Data folder. You should see an icon in the shape of a cylinder. This denotes a GeoPackage, which is a database format that allows multiple layers and related data to be stored in one file.\nNow expand the GeoPackage. You should see six layers, all for Rome, Italy:\n\n\nFrom the Rome Geoportal:\n\nPopolazione Residente Istat 2011 (Population Resident ISTAT 2023)\nLuoghi della Cultura (Cultural Locations)\nZone Urbanistiche (Urban Zones)\nWaterways (Idrografia)\n\nFrom Inside Airbnb:\n\nAirBnb listings from March 2023\nRome Neighbourhoods\n\n\n\nAdding data to your project: Grab and pull the Neighbourhoods_Rome layer down to the bottom left Layers window (see below). If this doesn’t work, see Step 9.\n\n\n\n\n\n\n\nDouble click on the “Neighbourhoods_Rome” layer and a new window will open. This takes you to the Layer Properties, which is where a lot of the work happens in QGIS. Click on the Source option and scroll down.\n Note: here is where you can see what projection (that is: coordinate reference system, or CRS) the layer is in, what its file path is, and what variables are included in the attribute table. When you’re done, close the Properties window.\n Another tip: Layer Properties can also be accessed by right-clicking on the layer and choosing Properties. When in doubt, try right-clicking!\nNow right click on the “Neighbourhoods_Rome” layer and select Open Attribute Table. This opens the data associated with the layer in a new window. You’ll see that this layer has 15 polygons and just one variable: the name of the neighborhood. When you’ve seen enough, close the attribute table.\nAnother way to add layers is from the Data Source Manager, which can be accessed from the menu icon  or via the Layer pulldown menu (Layer&gt;Data Source Manager).\nOpen the Data Source Manager. To add layers from a GeoPackage, we first need to connect to it. In the Data Source Manager Window, select GeoPackage from the list on the left.\nNow, in the central pane of the window, select “New” under Connections, navigate to the Rome_Data GeoPackage and select it, then click Connect. You should see all the GeoPackage Layers appear in the window below. Add the “AirBnb”, “Population_resident_ISTAT2011”, and “Waterways” layers by selecting and clicking Add. Close the Data Source Manager window.\n\n\n\n\n\n\n SAVE your project!\n\nYou should have four layers in your project now, but they are all piled on top of each other. Grab a layer and pull it above or below its neighbours. Try this a few times. What happens when you reorder the layers?\n Tip: If you add layers and decide you don’t want them, right click and select Remove Layer.\nNow right click on each layer and have a look at the attribute tables. What sorts of variables does each contain?\n\n Remember, QGIS projects do not save any data. They are simply instructions that tell QGIS what data to display and how to display it. If you move your project around without the accompanying layers, the project will be empty.\n\nNow spend some time practicing using the tools on the navigation tool bar. Make sure you understand what each tool does.\n\n\n\n\n\n\n\nTurn off all layers except Neighbourhoods and Population by unticking the box next to them. This keeps the layers in the project, but toggles their visibility. Pull the Population layer to the top. This obscures the Neighbourhoods layer, so let’s adjust the symbology so that we can see which ISTAT Population “census sections” fall into each Neighbourhood.\nOpen the Properties window for Population and choose the Symbology option. You have two choices: you can make the Population layer more transparent so that the Neighbourhoods layer shows through or you can adjust the Population polygon symbology so that the polygon has a border outline, but no fill.\nTo change layer transparency, adjust the Opacity level until you are satisfied (click Apply at the bottom of the window and observe the change on your screen).\n\n\n\n\n\n\n\nTo change polygon symbology, select the Simple Fill square near the top of the window. This will open a new set of symbology options. Fill controls what is inside the polygon, whilst Stroke controls the color, width, and style of the polygon border. Click on the little arrow to the right of the Fill color option, and choose Transparent Fill. Click Apply. It may take a few iterations to get a stroke color and width that you can see easily.\n\n\n\n\n\n\n\nOpen the Layer Properties window for Neighbourhoods and choose the Labels option. At the top of this window, where it says No Labels, there is a pulldown menu. Choose Single Labels and Apply and leave the defaults for now. Close the Layer Properties.\nNow open the attribute table for the Population layer. The NUMERO_RES variable provides the 2011 resident population count for each census section.\nClick on the variable name at the top of the table to sort the values.\n\n\nWhich census areas have the largest population? The lowest?\nSelecting the numbers at the side of the attribute table will select census sections on the map. Now look at your map—one enormous strength of a GIS is its ability to perform database operations and then show you on the map where these entities are located. Is there any pattern to census sections with the highest populations? With zero population? When you’re done looking, be sure to clear your selection: .\n\n\nThere’s quite some variety of areas—–some have large populations and some much smaller. However, some districts are also much bigger polygons than others.\nTo ease comparison across census polygons, let’s create a new variable for population density. Population density is straightforward to calculate, as a measure of people/square unit of distance (e.g., kilometer, mile, or hectare).\n\n\nCreating a new variable: Make sure the Population layer is selected in your layers and then click on the Field Calculator icon .\n Good to know: the Field Calculator can also be accessed from the layer attribute table.\n There are three important components to creating a new variable: Field name, field type, and the expression (see below).\nIn this case, for field type, choosing integer in this case will only return whole numbers for density. Because we want to include fractional numbers, choose “Decimal number” for field type.\n\n\n\n\n\n\n\nClick ok. To check your results, either look at the attribute table (the last column) or go directly to layer Symbology.\n\n Important: Adding a new variable makes permanent changes to the layer. After adding a new variable in this way, QGIS will require you to click the edit icon  and save your edits—be sure to check you’re happy before saying yes!\n\nWe’ll talk more about map-making, but for now, let’s gain some familiarity with basic symbology. Let’s visualize the variation in Population. To do this, open the Symbology window of the Layer Properties for the Population layer. At the top of the window where it says Single Symbol choose Graduated.\n\n\n\n\n\n\n\nThis will prompt you to choose a Value, which is the variable you want to visualise. Choose the “NUMERO_RES” variable.\n\n\n\n\n\n\n\nYou will also need to choose which colors you want to use. Click on the arrow by Color Ramp and take your pick.\nNow click Classify and Apply and OK. Take a look at the result—can you still see Neighbourhood boundaries? How do you like the combination of colors? Feel free to make changes.\n\n Save your project!\n\nIn the main QGIS window, turn off Population and turn on your Waterways and AirBnb layers.\n\n\n\n\n\n\n\nOpen the AirBnb attribute table. Selecting a subset of features: the AirBnb contains a variety of kinds of places to rent. Let’s isolate those where it’s the entire home/apartment.\nTo select a sub-category of AirBnb listings, you have two choices, to manually select, by sorting your attribute table as we did above, or select features by expression . The latter is much more reliable!\nTo select features by expression, you first need to know which variable has the information you want, and which values you’re looking for. Let’s select all AirBnbs in Rome that offer the entire home/apartment. Open the select features by expression window and then click on Fields and Values.\nWe will build an expression to select all features where the “room_type” is “Entire home/apt”. Double click on the “room_type” variable, then add an =, and then, on the right side of the window, select All Unique.\nThis will return a list of all the possible choices for this variable. Select “Entire home/apt” and then double click. You can also search for “Entire home/apt” in the search pane.\nWhen you’re finished, click Select Features at the bottom of the window and close. The top of your attribute table should say you have 17092 features selected (out of 24924), and when you close the attribute table, you should see a lot of points highlighted on the map view.\n\n\n\n\n\n\n\nCreating a new “AirBnb_entire_home” layer: right click on the AirBnb layer and choose Export&gt;Save selected features. For Format, choose GeoPackage. For File name, navigate to the Rome_Data GeoPackage. Then give your new layer a name—AirBnb_entire_home is a good choice. Click OK. Your new AirBnb layer will be added in Layers, and also saved as a permanent layer in the GeoPackage, for re-use elsewhere.\nClear your AirBnb selection and turn that layer off.\nCreating and exporting a map layout. To create a map output that can be saved and used outside the GIS, we need to create a new Print Layout. Click the New Print Layout icon  or choose Project&gt;New Print Layout from the pulldown menu.\nYou’ll be prompted to give your layout a name. Choose something descriptive and click OK. A new window will open with a blank page and a new set of layout tools. Click the Add Map icon  and then use your mouse to draw a box that covers the entire page. Your layout should automatically populate with your AirBnb + Wards + Waterways layers from the main QGIS view.\nTake some time to explore the various tools in the layout view. You have the option to add text (e.g., a title), et cetera, if you like.  Remember to save your layout occasionally!\nExport your AirBnb map: There are several options for file formats for map exports, including image, SVG, or PDF . Click on the Export as image option and choose .png for a file format. When prompted, make sure your export resolution is at least 300 dpi and save your map. Save and close this layout (you’ll always be able to go back to it later).\n\nWell done! Take your map home and show it off to your friends!",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Tutorial 1: \\\nWorking with QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial3.html",
+    "href": "Pages/Tutorial3.html",
+    "title": "Tutorial 3:\nIntroduction to Spatial Analysis",
+    "section": "",
+    "text": "This practical provides practice with common spatial analysis tools and approaches, including:",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "Tutorial 3: \\\nIntroduction to Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial3.html#first-things-firstsome-preliminaries",
+    "href": "Pages/Tutorial3.html#first-things-firstsome-preliminaries",
+    "title": "Tutorial 3:\nIntroduction to Spatial Analysis",
+    "section": "First Things First—Some Preliminaries",
+    "text": "First Things First—Some Preliminaries\n\nIf you haven’t already done so, from the Data page, download and expand the Spatial_Analysis folder on your desktop. Add all layers to a new project.\nHave a look at the data, which should mostly look familiar. Once again, all layers are for Rome. You should see four:\n\n\nFrom the Rome Geoportal:\n\nPopolazione Residente Istat 2011 (Population Resident ISTAT 2023)\nZone Urbanistiche (Urban Zones)\n\nFrom Inside Airbnb (http://insideairbnb.com/get-the-data):\n\nAirBnb listings from March 202, only listing for full house/apartment\n\nFrom Roma Mobilità\n\nRome Metro Stations (aggregated and cleaned from the original source)",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "Tutorial 3: \\\nIntroduction to Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial3.html#airbnb-counts-and-prices-by-area",
+    "href": "Pages/Tutorial3.html#airbnb-counts-and-prices-by-area",
+    "title": "Tutorial 3:\nIntroduction to Spatial Analysis",
+    "section": "AirBnb Counts and Prices by Area",
+    "text": "AirBnb Counts and Prices by Area\n\nLet’s start by exploring alternative ways of visualizing the AirBnb points. The first option is to count the number of AirBnBs falling within each Urban Zone of Rome.\n\n\nUnder the Vector&gt;Analysis Tools pulldown menu, select Count Points in Polygon.\n\n\n\n\n\n\n\nThis will open an interface that asks you to specify the polygons that will receive the points, and the layer that contains the points—we want to use the Urban Zones layer and the AirBnb Layer (see screenshot, below).\n Important: many spatial analysis tools create a new layer, so you want to be sure to pay attention to where you are saving your output and what you are naming it!\n\n\n\n\n\n\n\nYour new layer should be automatically added to your project.\n By the way: have you saved your project?!). Go to Symbology and try visualising the counts of AirBnbs by Urban Zone.\n\n\nWhat if we want to know the average price of AirBnbs per night, by Urban Zone?\nIt makes sense that Zones closer to the Centro Storico might be more expensive. To do this, we use a different, but similar, spatial join tool: Join Attributes by Location (summary)\n\n\nTo access this tool, we will need to open our QGIS “Toolbox”, which is opened by clicking the toolbox icon \nWhen you open the Toolbox, you are presented with many expandable menus. The tool we want, Join Attributes by Location (summary) is located in the “Vector general” menu.\n Note: If you know which tool you are looking for, it’s easiest to simply use the search menu!\n\n\n\n\n\n\n\nOpen the Join Attributes by Location (summary) tool.\nIn this interface, we will need to specify how the two layers should be combined—in this case, the Urban Zones contain the points. Tick that option.\nNext, under Fields to summarise, click  and choose “price”\nWe also need to choose which fields to summarise and which summary statistics to calculate. Click on  for Fields and Summaries and choose Count and Mean:\n\n\n\n\n\n\n\nChoose a location and name to save your new layer. Your interface should look like below. Click Run.\n\n\n\n\n\n\n\nVisualise your average price results by Urban Zone. Do they make sense?\nNext let’s see which Metro stations have the most AirBnbs nearby, and the highest average prices. To do this, we use a new tool—Buffers—as the easiest way to find out quickly which Metro stations have the most AirBnbs.\n If we only wanted a variable that calculates the distance from each AirBnb to the closest Metro, we could use the distance to Nearest Hub (Points) tool.\n\n\nThe Buffer tool is located under the Vector pulldown menu and Geoprocessing Tools (see below). You can also find it by searching the Toolbox.\n\n\n\n\n\n\n\nFor buffers, we will need to establish what we think is “nearby” a Metro station. Let’s choose 500 meters.\n Important: Buffers are always calculated in the units of the projection! If unsure what those are, check properties.\nAs with spatial joins, you will also need to choose where to save your new buffer layer and a name!\n Hint: Make a habit of including your buffer size in your layer name!\n\n\n\n\n\n\n\nClick run.\n\n\nHave a look at your buffers: zoom in, look at the attribute table. Pause and make sure you understand what you’re looking at.\nNow use a spatial join to count AirBnbs that fall within the ambit of each Metro station’s buffer.\nYou can also calculate the average price of AirBnbs within each buffer.\nAre there areas that are clearly more expensive?",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "Tutorial 3: \\\nIntroduction to Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial3.html#independent-work",
+    "href": "Pages/Tutorial3.html#independent-work",
+    "title": "Tutorial 3:\nIntroduction to Spatial Analysis",
+    "section": "Independent work",
+    "text": "Independent work\n\nWhich urban areas contain the highest number of expensive AirBnbs?  You’ll need to start by defining “expensive”.\nWhich areas contain the most AirBnbs per capita?  You may need to refresh your memory of how to create a new variable!\nAre AirBnbs located close to Metro stations more expensive than those located further away, on average?  Here a dissolved buffer makes more sense than individual Metro buffers!",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "Tutorial 3: \\\nIntroduction to Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Finding_spatial_data.html",
+    "href": "Pages/Finding_spatial_data.html",
+    "title": "Finding Spatial Data",
+    "section": "",
+    "text": "Spatial data can be found in lots of places! Essentially, as long as your data tells you where something is—place, address, lat/long–the GIS is going to have tools to import, visualize, and work with that data.",
+    "crumbs": [
+      "About",
+      "Data",
+      "Finding Spatial Data"
+    ]
+  },
+  {
+    "objectID": "Pages/Finding_spatial_data.html#city-data-portals",
+    "href": "Pages/Finding_spatial_data.html#city-data-portals",
+    "title": "Finding Spatial Data",
+    "section": "City Data Portals",
+    "text": "City Data Portals\nMany cities maintain open data portals that typically include a variety of spatial data, for example:\n\nMilano\nParis\nLondon\nSan Francisco",
+    "crumbs": [
+      "About",
+      "Data",
+      "Finding Spatial Data"
+    ]
+  },
+  {
+    "objectID": "Pages/Finding_spatial_data.html#country-level-data",
+    "href": "Pages/Finding_spatial_data.html#country-level-data",
+    "title": "Finding Spatial Data",
+    "section": "Country-level Data",
+    "text": "Country-level Data\nMany countries serve up data for administrative areas, often as separate tabular and spatial data.\nTip: tabular joins are often the easiest way to make these data work in a GIS environment!\n\nItaly\n\nAdministrative boundaries\n\nEuropean Union\n\nEurostat Database\nGIS Boundary Files\nGridded Data\n\nUnited Kingdom\nUnited States–NHGIS\nNew Zealand",
+    "crumbs": [
+      "About",
+      "Data",
+      "Finding Spatial Data"
+    ]
+  },
+  {
+    "objectID": "Pages/Finding_spatial_data.html#land-cover-data",
+    "href": "Pages/Finding_spatial_data.html#land-cover-data",
+    "title": "Finding Spatial Data",
+    "section": "Land Cover Data",
+    "text": "Land Cover Data\nOften involves big rasters!\n\nEurope–Copernicus\nUS National Land Cover Database (NLCD)",
+    "crumbs": [
+      "About",
+      "Data",
+      "Finding Spatial Data"
+    ]
+  },
+  {
+    "objectID": "Pages/Finding_spatial_data.html#other-cool-options",
+    "href": "Pages/Finding_spatial_data.html#other-cool-options",
+    "title": "Finding Spatial Data",
+    "section": "Other Cool Options",
+    "text": "Other Cool Options\nAny spreadsheet containing latitude and longitude coordinates can be easily imported into a GIS, which opens up a world of possibility! For example:\n\nInside Airbnb",
+    "crumbs": [
+      "About",
+      "Data",
+      "Finding Spatial Data"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial4.html",
+    "href": "Pages/Tutorial4.html",
+    "title": "Tutorial 4:\nEven More Spatial Analysis",
+    "section": "",
+    "text": "This tutorial introduces additional spatial analysis tools and starts to reinforce independent practice and problem-solving. By the end you should feel more confident with:",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "Tutorial 4: \\\nEven More Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial4.html#first-things-firstsome-preliminaries",
+    "href": "Pages/Tutorial4.html#first-things-firstsome-preliminaries",
+    "title": "Tutorial 4:\nEven More Spatial Analysis",
+    "section": "First Things First—Some Preliminaries",
+    "text": "First Things First—Some Preliminaries\n\nStart a new project and add Metro stations, the Urban Zones, and the Population data.\nAdjust your layer symbology so that you can clearly see the distribution of Metro stations.",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "Tutorial 4: \\\nEven More Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial4.html#thinking-about-metro-accessibility",
+    "href": "Pages/Tutorial4.html#thinking-about-metro-accessibility",
+    "title": "Tutorial 4:\nEven More Spatial Analysis",
+    "section": "Thinking About Metro Accessibility",
+    "text": "Thinking About Metro Accessibility\n\nLet’s consider the parts of the city that have the best access to the Metro. One way to do this is to create Voronoi polygons that partition the city, according to the closest station. This allows us to visualise the “catchment areas” of different stations.\n\n\nIn the Toolbox search window, look for Voronoi polygons. They will be in the Vector geometry area.\nOpen the interface and choose Metro stations as your input layer.\n Important: many tools only operate on the minimum area contained by the set of features—since Metros don’t extend across all Urban Zones, our output polygons will not, by default, cover the entire city.\nTo adjust for this, we use the Buffer region option, which increases the extent of the output layer.\nChoose a destination and name for your output layer. Click run.\n\n\n\n\n\n\n\nHave a look at your output. You may want to rearrange your layers so you can see what’s going on.\n\n\nMany of the polygons in this new layer extend well outside the border of the city. We will use the Clip tool to create an adjusted set of Voronoi polygons that align with Rome’s borders.\n\n\nClip is located in the same place as Buffer:\n\n\n\n\n\n\n\nClick run and then have a look at your results. What do we see?",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "Tutorial 4: \\\nEven More Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial4.html#collaborative-group-work",
+    "href": "Pages/Tutorial4.html#collaborative-group-work",
+    "title": "Tutorial 4:\nEven More Spatial Analysis",
+    "section": "Collaborative group work",
+    "text": "Collaborative group work\n\nWhat if we wanted to estimate the share of the population that has access to a Metro station?\nWhat are our alternatives for visualizing the distribution of Airbnbs in Rome?",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "Tutorial 4: \\\nEven More Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html",
+    "href": "Pages/Getting_started_QGIS.html",
+    "title": "Getting started\nwith QGIS",
+    "section": "",
+    "text": "It’s the 21st century—why are we using a desktop GUI-based software program? A few reasons:\n\nA GIS like QGIS or ESRI’s ArcGIS Pro provides a soft introduction to spatial thinking, managing spatial data files, and visualizing/analyzing information. It’s a lot to take in in just a few days.\nThe GUI (graphical user interface) component of a traditional GIS allows you to explore the wide range of cartographic and analytical options available.\nA GIS is great for visualizing multiple layers of information at once…and catching potential problems early…\nOnce you are comfortable with one GIS package, those skills will translate easily to other environments. You’re not just learning a software; you’re learning a way of thinking.\nGIS has amazing functionality, all in one place.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html#first-things-first-why-an-old-school-gis-application",
+    "href": "Pages/Getting_started_QGIS.html#first-things-first-why-an-old-school-gis-application",
+    "title": "Getting started\nwith QGIS",
+    "section": "",
+    "text": "It’s the 21st century—why are we using a desktop GUI-based software program? A few reasons:\n\nA GIS like QGIS or ESRI’s ArcGIS Pro provides a soft introduction to spatial thinking, managing spatial data files, and visualizing/analyzing information. It’s a lot to take in in just a few days.\nThe GUI (graphical user interface) component of a traditional GIS allows you to explore the wide range of cartographic and analytical options available.\nA GIS is great for visualizing multiple layers of information at once…and catching potential problems early…\nOnce you are comfortable with one GIS package, those skills will translate easily to other environments. You’re not just learning a software; you’re learning a way of thinking.\nGIS has amazing functionality, all in one place.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html#downloading-qgis",
+    "href": "Pages/Getting_started_QGIS.html#downloading-qgis",
+    "title": "Getting started\nwith QGIS",
+    "section": "Downloading QGIS",
+    "text": "Downloading QGIS\nThis week, all of our hands-on practicals will use QGIS. I prefer QGIS because it’s free and runs locally on both Windows and Macs.\n\nFrom the QGIS site, choose your operating system and download the LTR version of QGIS—3.40.7 Bratislava as of June 2025. Note that this is not the most recent version of QGIS; we want the more stable LTR.\n\nFor Mac users, you may need to right click on the app from your Applications folder to force QGIS to open the first time. For newer Mac OS, you may also need to navigate to System Settings &gt; Privacy & Security and allow QGIS under “Security.” You’ll only need to do this once.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html#locating-tutorial-data",
+    "href": "Pages/Getting_started_QGIS.html#locating-tutorial-data",
+    "title": "Getting started\nwith QGIS",
+    "section": "Locating tutorial data",
+    "text": "Locating tutorial data\nAll tutorial data for this week are available here.\n\nWhat about other data?\nFor your progettino or other research, you’ll locate data online and then download. Be sure to keep organized!\nThat means:\n\nMove data from your Download folder and store somewhere obvious.\nKeep track of where you found data (e.g., webpage links) and any relevant metadata.\nWhen cleaning data and getting ready to work with it, keep a master copy!\n This holds for tutorial data too, although you can always download a new copy if something goes wrong!",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html#data-hygiene",
+    "href": "Pages/Getting_started_QGIS.html#data-hygiene",
+    "title": "Getting started\nwith QGIS",
+    "section": "Data hygiene",
+    "text": "Data hygiene\nMy recommendations for good data hygiene this week:\n\nCreate a folder in either Desktop or Documents called GIS_course (or similar). This is where you will save EVERYTHING to do with this week’s work.\nDownload the tutorial data files. These are zipped. Expand them and save to your new GIS_Course folder.\nKeep data and QGIS projects together in the same folder.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html#opening-qgis-and-getting-started",
+    "href": "Pages/Getting_started_QGIS.html#opening-qgis-and-getting-started",
+    "title": "Getting started\nwith QGIS",
+    "section": "Opening QGIS and getting started",
+    "text": "Opening QGIS and getting started\nWhen you open QGIS, you’ll notice that there’s nothing there to work with! You’ll need to add data in order to visualize information, make maps, or perform analysis.\n\nAdding data\n\nOpen QGIS.\nThe upper left panel provides a browser directory window. Navigate to your GIS_course folder (see image below).\n Right click on the directory link and add to Favorites. This will make it easier to find your data and projects this week!\nExpand the Rome_Data folder. You should see a cylinder icon and Rome_Data.gpkg. The “gpkg” file suffix indicates a geopackage, a collection of data readable to the GIS. The Rome_Data geopackage contains six layers.\nLet’s see what these data look like! The easiest way to add data in QGIS is to drag and drop—pull the layer down to the Layers panel and watch it appear.\n\n\n\n\nQGIS interface overview\n\n\n\n\nLayer visibility\n\nAdd the Airbnb and Cultural Locations layers from the Rome_Data geopackage and note how layers stack up in the Layers window.\nNote how QGIS draws from the bottom layer up (see below). To re-order layers, drag and drop them above and below each other—see how visibility changes?\nLayers can be turned off by unchecking the box next to the layer name. The layer will remain in the project but won’t be visible.\n\n\n\n\nQGIS layers\n\n\n\n\nLayer symbology\n\nLayer appearances can be changed. This includes fill colors, line thicknesses, and symbol choices, depending on feature type.\nTo change feature symbology, double click on a layer&gt;Symbology or right click&gt;Properties&gt;Symbology.\nClicking on  (for polygons) will open a range of options for color and outline (“stroke”) width and color.\n\n Your turn: Adjust the symbology and ordering of the three layers.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html#basemaps",
+    "href": "Pages/Getting_started_QGIS.html#basemaps",
+    "title": "Getting started\nwith QGIS",
+    "section": "Basemaps",
+    "text": "Basemaps\nBasemaps provide a background for our layers in QGIS and are useful for providing spatial context and, when used sparingly, improving map compositions.\n\n\n\n\n\nFor example, the above image shows the distribution of Airbnb rentals in Rome for March 2023. However, without any additional spatial context, it’s hard to say much about the distribution of points.\n\nAdding a QGIS basemap plug-in\nQGIS offers a variety of plug-ins that expand core QGIS capacity. The QuickMapServices plug-in offers connection to a range of basemaps.\n\nTo install QuickMapService, use the Plugins pulldown menu on the main QGIS window and search plug-ins for “QuickMapSerices”.\nInstall. Basemaps are then accessed via the Web pulldown menu and QuickMapServices\n\n There are additional basemaps available: click on QuickMapServices Settings&gt;More services&gt;Get contributed pack.\n\nTo add a basemap, simply choose one from the list. OSM, CartoDB, and Google are good choices.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html#qgis-projects-versus-data",
+    "href": "Pages/Getting_started_QGIS.html#qgis-projects-versus-data",
+    "title": "Getting started\nwith QGIS",
+    "section": "QGIS: projects versus data",
+    "text": "QGIS: projects versus data\nLike other analytical software applications, QGIS does not store data in the project. What does this mean? When you save your project, you save a set of instructions for which data to include and how to display them (e.g., selections and symbolization). You don’t save the layers themselves. They remain in their original location.\n In short: you want to move data and project together.\nThis also means that you can work with the same layers in multiple projects and also that QGIS is very careful about editing data.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Getting_started_QGIS.html#getting-help-and-learning-more",
+    "href": "Pages/Getting_started_QGIS.html#getting-help-and-learning-more",
+    "title": "Getting started\nwith QGIS",
+    "section": "Getting help and learning more",
+    "text": "Getting help and learning more\nThe goal of this week’s course is to be comfortable with GIS basics and know how to ask for help—this means, which terms to use, how to troubleshoot basic problems, etc.\n\nQGIS Documentation\nQGIS provides excellent documentation and tutorials.\n\n\nLearning to love Google\nIf you have a question, chances are someone’s already asked it on the internet and someone else has answered it. Don’t be afraid to google around for answers.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Getting started \\\nwith QGIS"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial2_part2.html",
+    "href": "Pages/Tutorial2_part2.html",
+    "title": "Bonus Mapping Practice",
+    "section": "",
+    "text": "This bonus practical provides some additional practice mapping and also illustrates how table joins work (and are awesome).\n\nStart a new project.\nFrom the EU mapping example data, add the NUTS2 regions.\n\n Save your project!\n\nHave a look at the attribute table by right clicking on the layer and selecting Open Attribute Table. You’ll notice that all we have here are region names and codes, but no additional contextual data.\nHowever, we do have Total Fertility Rate data for 2020 in an aspatial spreadsheet format (yay!). To look at this data in QGIS, we need to load the file into the project.\nOpen your Data Source Manager by clicking on the Data Source Manager icon . Navigate to the NUTS2 Total Fertility csv spreadsheet in the EU Mapping Example folder and click on it. Click Add and Close.\n\n\n\n\n\n\n\nYou should see the table appear in your layer list, but of course nothing will happen on your map (why?).\nRight click on your Fertility table and have a look at the attributes. Everything looks good: we have Name, a code, and a TFR_2020 variable. Close the table.\nNow go to Properties&gt;Information and scroll down.\n We want to check that the variables have been imported in the correct format—most importantly, that TFR_2020 has been imported as a number (double or integer) and not text (text or string). Text variables cannot be mapped in the same way as numerical information. Close the Properties window.\n\n\n\n\n\n\n\nA common way of getting data into a GIS is to find information in a spreadsheet that can then be combined with the layer attribute table. This is referred to as “joining tables” in a GIS and requires a common column—or primary key–of information in both tables that allows them to be merged into one bigger table that combines both contextual data and location information for each observation.\nThis primary key must uniquely identify each observation. Names of areas, such as “Haute-Normandie”, are one option but if Haute-Normandie is referred to as “Haute-Normandie” in one data source and “Haute Normandie” in the other, the GIS won’t know to match them. For this reason, we generally rely on unique identifier codes.\nLet’s join our Fertility data to the NUTS2 layer. To do this, have a look at both attribute tables and identify which variable both tables have in common.\n Note: the variable names do not have to be the same! However, their format (e.g., text) and contents do have to be the same. Here, GEO_codes and NUTS_ID contain the same information.\nRight click on the NUTS2 Layer, go to Properties and then choose Joins . Click on the  the bottom of the interface and a new window will open. Here is where you specify which table to join to the layer attribute table and which codes to use. Click OK and then Apply and OK in the Join window.\n\n\n\n\n\n\n\nTo see if the join worked, open the layer attribute table and scroll to the end. You should see the TFR_2020 variable from the csv table appended at the end. (you can also go directly to Symbology and map the TFR variable)\n Important note: No new data have been created! If you are happy with the join, right click on the layer and choose Export&gt;Save Features As… and save a new layer in your GeoPackage called NUTS2_TFR_2020. The new layer should be automatically added to your project.\n\n\nNow we are ready to classify and symbolise the data and then make a map!",
+    "crumbs": [
+      "About",
+      "Tuesday",
+      "Bonus Mapping Practice"
+    ]
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#theres-a-variety-of-kinds-of-spatial-data",
+    "href": "Lectures/GIS_basics_lecture.html#theres-a-variety-of-kinds-of-spatial-data",
+    "title": "(Q)GIS Basics",
+    "section": "There’s a variety of kinds of spatial data",
+    "text": "There’s a variety of kinds of spatial data\n\nData in explicitly spatial format: shapefile, feature classes in a geodatabase, KML (google earth), geoJSON, and more – plus raster file formats\nNon-spatial data with variables for latitude and longitude\nNon-spatial data with geographic identifiers that allow “joining” to data from category 1.\nNon-spatial data with addresses or place names\nGeoreferencing of paper or digital maps and digitization of features. i.e., create your own data"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#qgis-common-files-formats",
+    "href": "Lectures/GIS_basics_lecture.html#qgis-common-files-formats",
+    "title": "(Q)GIS Basics",
+    "section": "QGIS common files formats",
+    "text": "QGIS common files formats\n\nVector data are typically stored as shapefiles or as elements of a GeoPackage, although other formats exist\n\nShapefiles are a classic spatial data format, typically recognized by other GIS software applications and this is the term often used to refer to spatial data\nGeoPackages are containers that can include layers, but also raster data and even spreadsheets (e.g. csv) data\n\nNeither shapefiles nor GeoPackages will be recognizable as spatial data in Windows/Finder"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#some-basic-gis-rules",
+    "href": "Lectures/GIS_basics_lecture.html#some-basic-gis-rules",
+    "title": "(Q)GIS Basics",
+    "section": "Some basic GIS rules",
+    "text": "Some basic GIS rules\nRule #1: Don’t use Windows/Finder to copy or move individual files!\n\nYou can copy and paste folders, but pay attention to file directory paths"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#some-basic-gis-rules-1",
+    "href": "Lectures/GIS_basics_lecture.html#some-basic-gis-rules-1",
+    "title": "(Q)GIS Basics",
+    "section": "Some basic GIS rules",
+    "text": "Some basic GIS rules\nRule #2: When you do work in QGIS, your efforts are saved as a project\n\nProjects link to the data layers you’ve added, but do not actually include those layers—those stay in their original location and can be used by multiple projects at once\nIf you copy your project to another location, without moving the individual layers as well, your project will be empty when you open it"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#some-basic-gis-rules-2",
+    "href": "Lectures/GIS_basics_lecture.html#some-basic-gis-rules-2",
+    "title": "(Q)GIS Basics",
+    "section": "Some basic GIS rules",
+    "text": "Some basic GIS rules\nRule #3: How we name variables, layers, and folders can matter\n\nNo spaces in folder or file names\nInstead use _\nDon’t start variable names or file names with numbers\n\nSo: pop_1990 instead of 1990_pop\n\nAvoid strange symbols in file names and folders (& or *, for example)"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#yesterday-we-explored-some-basics",
+    "href": "Lectures/GIS_basics_lecture.html#yesterday-we-explored-some-basics",
+    "title": "(Q)GIS Basics",
+    "section": "Yesterday we explored some basics",
+    "text": "Yesterday we explored some basics\n\nAdding layers\nChanging symbology"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#other-basic-stuff",
+    "href": "Lectures/GIS_basics_lecture.html#other-basic-stuff",
+    "title": "(Q)GIS Basics",
+    "section": "Other basic stuff",
+    "text": "Other basic stuff\n\nQGIS pulldown menus and toolbars\n\nEspecially navigation \n\nPanel and toolbar visibility is controlled via View&gt;\nSave often!"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#querying-a-database",
+    "href": "Lectures/GIS_basics_lecture.html#querying-a-database",
+    "title": "(Q)GIS Basics",
+    "section": "Querying a database",
+    "text": "Querying a database\n\nAttribute queries create a subset of records or features that meet the query criteria\n\nCan be simple, like “Find L’Aquila”\n\nThis can be done by sorting, browsing, or searching\nOr selecting features that meet particular criteria (like minimum city size)\nOnce we’ve created our selection we can:\n\nGenerate summary statistics\nCreate new layer or shapefile\nCreate new variables that label features as having a particular characteristic"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#attribute-queries",
+    "href": "Lectures/GIS_basics_lecture.html#attribute-queries",
+    "title": "(Q)GIS Basics",
+    "section": "Attribute queries",
+    "text": "Attribute queries\n\nRemember: vector data have attribute tables, often containing useful information!\nStructured Query Language (SQL)\n\nCommon database query language\nA logical expression that generates a selected set of records\n\nFor example, all cities larger than 50,000 inhabitants\nOr all “highly active” volcanoes\n\nWe can then “summarize” information based on our selected set of cities — e.g. median income for all cities greater than 50,000 inhabitants\n\nIn QGIS: “Select features by expression”"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#spatial-queries",
+    "href": "Lectures/GIS_basics_lecture.html#spatial-queries",
+    "title": "(Q)GIS Basics",
+    "section": "Spatial queries",
+    "text": "Spatial queries\n\nSpatial queries also generate a subset of features, but not based on their attribute characteristics\n\nInstead, we’re interested in their spatial characteristics\nFor example, all housing units inside a neighborhood\n\nCommon types of spatial queries:\n\nContainment – All the businesses in a particular region\nIntersection – All the Italian provinces that touch the coastline\n\nCan also be features that overlap or cross features from another layer\n\n\nInteractive selection – Can be done via table or map\nIn QGIS: “select by location” and “select within distance”"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#tabular-joins",
+    "href": "Lectures/GIS_basics_lecture.html#tabular-joins",
+    "title": "(Q)GIS Basics",
+    "section": "Tabular joins",
+    "text": "Tabular joins\n\nUsed A LOT to work with spreadsheet data containing information for geographical areas\nTables are joined based on a common attribute\nThis is how one table’s information is matched to the corresponding table’s\nIn QGIS, the column you use to join tables needs to be identical and the same data type—but the same variable name is not necessary\nIn QGIS: Joins interface accessed from layer properties\nStandardized codes are our savior: using names to join data tables can be problematic if name spellings vary"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#tabular-joins-1",
+    "href": "Lectures/GIS_basics_lecture.html#tabular-joins-1",
+    "title": "(Q)GIS Basics",
+    "section": "Tabular joins",
+    "text": "Tabular joins"
+  },
+  {
+    "objectID": "Lectures/GIS_basics_lecture.html#spatial-joins",
+    "href": "Lectures/GIS_basics_lecture.html#spatial-joins",
+    "title": "(Q)GIS Basics",
+    "section": "Spatial joins",
+    "text": "Spatial joins\n\nBest thought of as a spatial analysis method: combines layers to create new information, based on location\n\nNumber of schools in a neighborhood, for example\n\nOutput is a new layer or feature class\nWhat type of spatial join we do depends on what types of features we’re working with"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#thiessen-or-voronoi-polygons",
+    "href": "Lectures/Spatial_analysis_lecture2.html#thiessen-or-voronoi-polygons",
+    "title": "More common spatial analysis tools",
+    "section": "Thiessen (or Voronoi) polygons",
+    "text": "Thiessen (or Voronoi) polygons\nDeriving polygons from points\n\nWhat about the case where we might want to go from point features to polygons?\nFor example, suppose we want to define “catchment areas” for each metro station in Rome.\n\nThe assumption being that each person will use the station closest to them"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#thiessen-or-voronoi-polygons-1",
+    "href": "Lectures/Spatial_analysis_lecture2.html#thiessen-or-voronoi-polygons-1",
+    "title": "More common spatial analysis tools",
+    "section": "Thiessen (or Voronoi) polygons",
+    "text": "Thiessen (or Voronoi) polygons\nDeriving polygons from points"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#thiessen-or-voronoi-polygons-2",
+    "href": "Lectures/Spatial_analysis_lecture2.html#thiessen-or-voronoi-polygons-2",
+    "title": "More common spatial analysis tools",
+    "section": "Thiessen (or Voronoi) polygons",
+    "text": "Thiessen (or Voronoi) polygons\nAllocating areas to their closest points\n\nIn QGIS: Voronoi Polygons tool\n\nCreates new polygon layer as output\nDefault extent of polygons is the bounded rectangle containing the points\n\nUse buffer region option to expand boundaries of new polygon layer"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#thiessen-or-voronoi-polygons-3",
+    "href": "Lectures/Spatial_analysis_lecture2.html#thiessen-or-voronoi-polygons-3",
+    "title": "More common spatial analysis tools",
+    "section": "Thiessen (or Voronoi) polygons",
+    "text": "Thiessen (or Voronoi) polygons\nAllocating areas to their closest points"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#how-to-change-boundaries-of-a-layer-to-match-another",
+    "href": "Lectures/Spatial_analysis_lecture2.html#how-to-change-boundaries-of-a-layer-to-match-another",
+    "title": "More common spatial analysis tools",
+    "section": "How to change boundaries of a layer to match another",
+    "text": "How to change boundaries of a layer to match another\nClip\n\nIn QGIS located under Vector &gt; Geoprocessing\n\nClips—or cuts—one layer, using boundaries of a second layer\nSo here, we can clip Voronoi polygons using the urban area polygon layer"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#how-to-change-boundaries-of-a-layer-to-match-another-1",
+    "href": "Lectures/Spatial_analysis_lecture2.html#how-to-change-boundaries-of-a-layer-to-match-another-1",
+    "title": "More common spatial analysis tools",
+    "section": "How to change boundaries of a layer to match another",
+    "text": "How to change boundaries of a layer to match another\nClip"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#near-distance-to-nearest-hub-in-qgis",
+    "href": "Lectures/Spatial_analysis_lecture2.html#near-distance-to-nearest-hub-in-qgis",
+    "title": "More common spatial analysis tools",
+    "section": "Near (distance to nearest hub in QGIS)",
+    "text": "Near (distance to nearest hub in QGIS)\nCalculates the straight line distance from the input feature to the nearest feature in a specified feature set"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#grids",
+    "href": "Lectures/Spatial_analysis_lecture2.html#grids",
+    "title": "More common spatial analysis tools",
+    "section": "Grids",
+    "text": "Grids\nCreating our own polygons\n\nUseful for generating uniform polygons as inputs for spatial joins\n\nOvercomes shortcomings of administrative geographies which can vary considerably in size\n\nAlso useful for visualizing data in an appealing way\nIn QGIS, under Research Tools &gt; Create Grid\n\nChoice of size and shape of output polygons (e.g., hexagons, squares, diamonds)"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#grids-1",
+    "href": "Lectures/Spatial_analysis_lecture2.html#grids-1",
+    "title": "More common spatial analysis tools",
+    "section": "Grids",
+    "text": "Grids\nCreating our own polygons"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#grids-2",
+    "href": "Lectures/Spatial_analysis_lecture2.html#grids-2",
+    "title": "More common spatial analysis tools",
+    "section": "Grids",
+    "text": "Grids\nSpatial join with grids: AirBnb\n\nWhat other tools could we use to improve this visualization?"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#density-estimation",
+    "href": "Lectures/Spatial_analysis_lecture2.html#density-estimation",
+    "title": "More common spatial analysis tools",
+    "section": "Density estimation",
+    "text": "Density estimation"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#take-our-standard-approach-so-far",
+    "href": "Lectures/Spatial_analysis_lecture2.html#take-our-standard-approach-so-far",
+    "title": "More common spatial analysis tools",
+    "section": "Take our standard approach so far",
+    "text": "Take our standard approach so far\nVisualising points"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#take-our-standard-approach-so-far-1",
+    "href": "Lectures/Spatial_analysis_lecture2.html#take-our-standard-approach-so-far-1",
+    "title": "More common spatial analysis tools",
+    "section": "Take our standard approach so far",
+    "text": "Take our standard approach so far\nPoint in polygon\nThe usual approach, where we reference counts of occurrences by some spatial unit and/or by area"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#density-estimation-1",
+    "href": "Lectures/Spatial_analysis_lecture2.html#density-estimation-1",
+    "title": "More common spatial analysis tools",
+    "section": "Density estimation",
+    "text": "Density estimation\nHere, the darker the polygon, the higher the point count, which can be problematic\n\n\n\n\n\n\n\n\n\nDependent on choice of spatial unit\nAssumes that points immediately outside the unit have no impact\nAn alternative is to generate a surface that estimates the density of points across the study area\nWe’ll talk about the most common method:\n\nKernel Density Estimation"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#density-estimation-2",
+    "href": "Lectures/Spatial_analysis_lecture2.html#density-estimation-2",
+    "title": "More common spatial analysis tools",
+    "section": "Density estimation",
+    "text": "Density estimation\n\nWith density estimation, we start with a set of points\nThese may be simple points (e.g., crime occurrences) or points with data associated with them (e.g., cities with a population attribute)\nIn this case, we are looking for alternative ways to visualize and measure the density of points\nThis can be useful for:\n\nHot spot identification\nAlternatives to choropleth mapping"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#kernel-density",
+    "href": "Lectures/Spatial_analysis_lecture2.html#kernel-density",
+    "title": "More common spatial analysis tools",
+    "section": "Kernel density",
+    "text": "Kernel density\n\nOutputs a raster, where we decide the cell size\nCell contents are the estimated density of points for that area\nKernel density methods place a kernel of a particular shape and of a particular bandwidth over each point and distributes its value across the kernel\nThis kernel is like the neighborhood, except that it surrounds the points and distributes their value underneath the curve\n\nCell densities are then the sum of the kernel intersections that occur"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#kernel-density-1",
+    "href": "Lectures/Spatial_analysis_lecture2.html#kernel-density-1",
+    "title": "More common spatial analysis tools",
+    "section": "Kernel density",
+    "text": "Kernel density\nAirbnb density in Rome, March 2023"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#kernel-density-2",
+    "href": "Lectures/Spatial_analysis_lecture2.html#kernel-density-2",
+    "title": "More common spatial analysis tools",
+    "section": "Kernel density",
+    "text": "Kernel density\n\nResults will depend on cell size and bandwidth (or radius)\n\nLarger cell sizes will be grainier\nLarger radii will result in a smoother surface"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-statistics",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-statistics",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial statistics",
+    "text": "Spatial statistics\n\nSpatial statistics are like regular statistics\nWe have numbers we calculate to describe spatial patterns or how values are distributed across space\nCommon applications for spatial statistics:\n\nto help us understand when a pattern really is unusual or where outliers really are\nto estimate models that either measure the impact “space” has on our dependent variable or filter that effect out so we can focus on the variables we’re truly interested in"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-statistics-1",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-statistics-1",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial statistics",
+    "text": "Spatial statistics\nA big umbrella term\n\nPoint pattern analysis\n\nIs the distribution of points random? Uniform? Can we identify clusters?\n\nMeasures of spatial autocorrelation or dependence\n\nGlobal – Do we observe positive or negative autocorrelation across our study area\nLocal – Are values correlated with local neighbors?\n\nHouse values\nCrime\n\n\nCapturing spatial heterogenity in relationships and processes\n\ne.g., Geographically Weighted Regression"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation\n\nTobler’s First Law of Geography: “Everything is related to everything else, but near things are more related than distant things.”\nA variable’s values are related to each other in space – they’re correlated\nThis means that observations are often not independent of each other\n\nFor example, house values: If I tell you how much a particular house is worth, does it affect your prediction of the neighboring house’s value?\n\nWe distinguish between two types of autocorrelation: positive and negative"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-1",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-1",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#geoda",
+    "href": "Lectures/Spatial_analysis_lecture2.html#geoda",
+    "title": "More common spatial analysis tools",
+    "section": "GeoDa",
+    "text": "GeoDa\n\nGeoDa((https://geodacenter.github.io) – An exploratory spatial data analysis package.\nIt’s free and in some ways much more powerful than QGIS or ArcMap\nTo use, open GeoDa\n\nAnd then, under File, open geopackage or shapefile\n\nNative facility with spatial statistics\n\nGood first choice for visualization, exploration, and model estimation\nPlus cartograms, variable smoothing tools, and lots of other exploratory tools"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-2",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-2",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation\nWhat is neighborhood?\n\nAll measures of spatial association depend on scale\n\nAnd how we define neighbors\n\nNeighborhoods can be defined based on distance, contiguity, or nearest neighbors\n\nDistance: My neighbors are those who live within a mile of me, for example\nContiguity: Refers to polygons. My neighbors are those I share a border with:\n\nQueen’s case: Shared borders and corners count for contiguity\nRook’s case: Only shared borders count for contiguity\n\nk Nearest Neighbors: The k nearest units to mine are considered my neighbors\n\n1st order versus 2nd order, etc: We could choose our immediate neighbors, or those that are neighbors of our neighbors."
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-3",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-3",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation\nQuantifying neighborhood\n\nWhen we define our neighborhood, this is implemented using a “weights matrix”\n\nUsually 1 and 0’s that indicate yes or no for whether a spatial unit is my neighbor\nUnits are not considered neighbors of themselves\nThese matrices are generally symmetric – If I’m your neighbor, then you’re my neighbor (but this isn’t always the case – e.g., k nearest neighbors)\n\nHow you define your neighborhood can influence results\n\nSo, best to check how sensitive your results are to your choice of weights\n\nIdeally choice of weights is informed by data, theory, and previous research"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-4",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-4",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation\nGlobal – Moran’s I\n\nThe most commonly used measure of global spatial autocorrelation\nThis is how we estimate the extent of spatial dependence across a set of units for a particular variable\nThis is also how we might typically assess whether model residuals are spatially auto-correlated"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-5",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-5",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation\nMoran’s I – Airbnb counts across Rome urban zones\n\n\n\nUrban Zones with counts of AirBnb listings\nWeights file\nSignificance is generated through randomization\nInterpretation: The line indicates the correlation between numbers of AirBnbs and spatially lagged values\nPositive spatial autocorrelation in the distribution of AirBnbs across Urban Zones in Rome"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-6",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-6",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation\nLocal Indicators of Spatial Association (LISA)\nLocal Moran’s I\n\nIdentifies the presence or absence of significant spatial clusters or outliers for each location. A randomization approach is used to generate a spatially random reference distribution to assess statistical significance\nRather than looking at the entire spatial configuration of units and values at one time—like the global Moran’s I—local indicators of spatial autocorrelation look at each observation at a time, along with values of neighbors"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-7",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-7",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation\nGetis-Ord Gi* Statistic\n\nThe resulting Z score tells you where features with either high or low values cluster spatially. This tool works by looking at each feature within the context of neighboring features.\nA feature with a high value is interesting, but may not be a statistically significant hot spot. To be a statistically significant hot spot, a feature will have a high value and be surrounded by other features with high values as well."
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-8",
+    "href": "Lectures/Spatial_analysis_lecture2.html#spatial-autocorrelation-8",
+    "title": "More common spatial analysis tools",
+    "section": "Spatial autocorrelation",
+    "text": "Spatial autocorrelation\nCounts of AirBnb Listings in Rome (GeoDa)"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#what-are-the-pathways-of-population-change-across-the-u.s.",
+    "href": "Lectures/Introductory_lecture.html#what-are-the-pathways-of-population-change-across-the-u.s.",
+    "title": "Introductions + Why GIS?",
+    "section": "What are the pathways of population change across the U.S.?",
+    "text": "What are the pathways of population change across the U.S.?"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#analytical-steps",
+    "href": "Lectures/Introductory_lecture.html#analytical-steps",
+    "title": "Introductions + Why GIS?",
+    "section": "Analytical steps",
+    "text": "Analytical steps"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#analytical-steps-1",
+    "href": "Lectures/Introductory_lecture.html#analytical-steps-1",
+    "title": "Introductions + Why GIS?",
+    "section": "Analytical steps",
+    "text": "Analytical steps"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#results",
+    "href": "Lectures/Introductory_lecture.html#results",
+    "title": "Introductions + Why GIS?",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#results-1",
+    "href": "Lectures/Introductory_lecture.html#results-1",
+    "title": "Introductions + Why GIS?",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#results-persistent-loss-counties",
+    "href": "Lectures/Introductory_lecture.html#results-persistent-loss-counties",
+    "title": "Introductions + Why GIS?",
+    "section": "Results: Persistent Loss Counties",
+    "text": "Results: Persistent Loss Counties"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#some-takeaways",
+    "href": "Lectures/Introductory_lecture.html#some-takeaways",
+    "title": "Introductions + Why GIS?",
+    "section": "Some takeaways",
+    "text": "Some takeaways\n\nUnderstanding local population change requires a contextual approach, such as the historical patterns of change and the experiences of surrounding regions\nOur typology approach, which groups the patterns of population changes for both individual areas and their neighboring regions over a span of 70 years, provides a detailed understanding of how depopulation has spatially unfolded in the United States\nGIS underpins this analysis, even if methods are more geographic data science"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#common-kinds-of-spatial-questions",
+    "href": "Lectures/Introductory_lecture.html#common-kinds-of-spatial-questions",
+    "title": "Introductions + Why GIS?",
+    "section": "Common kinds of spatial questions",
+    "text": "Common kinds of spatial questions\n\nHow does a variable or phenomenon vary over space (e.g. income)? (Can be answered with a map)\nHow does distance to university influence innovation or entrepreneurship? (Can be answered using traditional statistical software, with spatial variables created using GIS)\nWhat is the spatial distribution of crime in a given city? (Can be answered with maps and descriptive spatial statistics)\nHow are business success and neighborhood characteristics related? (Can be answered with spatial statistics and models)"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#early-spatial-analysis-example-john-snows-1854-cholera-map",
+    "href": "Lectures/Introductory_lecture.html#early-spatial-analysis-example-john-snows-1854-cholera-map",
+    "title": "Introductions + Why GIS?",
+    "section": "Early spatial analysis example: John Snow’s 1854 Cholera Map",
+    "text": "Early spatial analysis example: John Snow’s 1854 Cholera Map"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#what-can-we-do-with-a-gis",
+    "href": "Lectures/Introductory_lecture.html#what-can-we-do-with-a-gis",
+    "title": "Introductions + Why GIS?",
+    "section": "What can we do with a GIS?",
+    "text": "What can we do with a GIS?\n\nData visualization – for example, exploratory analysis or cartography\nExplore geographic coincidence – for example, how many new firms in a region\nCalculate geometries – for example, length of road in an area, or the center of a polygon\nIdentification of spatial patterns – for example, clusters or hot spots\nFinding spatial relationships – for example, measuring exposure, accessibility, or market areas\nCalculating spatial variables – for example, distance or proximity\nEstimating values or density – for example, interpolation"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#there-are-so-many-ways-to-think-about-space",
+    "href": "Lectures/Introductory_lecture.html#there-are-so-many-ways-to-think-about-space",
+    "title": "Introductions + Why GIS?",
+    "section": "There are so many ways to think about space",
+    "text": "There are so many ways to think about space\n\nSource: Clark, 2011"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#organizing-spatial-data-in-a-gis",
+    "href": "Lectures/Introductory_lecture.html#organizing-spatial-data-in-a-gis",
+    "title": "Introductions + Why GIS?",
+    "section": "Organizing spatial data in a GIS",
+    "text": "Organizing spatial data in a GIS\n\nSource: krygier.owu.edu"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#organizing-spatial-data-in-a-gis-1",
+    "href": "Lectures/Introductory_lecture.html#organizing-spatial-data-in-a-gis-1",
+    "title": "Introductions + Why GIS?",
+    "section": "Organizing spatial data in a GIS",
+    "text": "Organizing spatial data in a GIS\n\nA GIS doesn’t save information as maps\n\nRather, the GIS stores information on object location and relation to other objects and in space\n\nThings to be aware of:\n\nYour spatial data model\nThe relationships your objects have with each other in the real world\n\ne.g., street intersections or shared regional borders\nReferred to as “topology”"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#spatial-data-models",
+    "href": "Lectures/Introductory_lecture.html#spatial-data-models",
+    "title": "Introductions + Why GIS?",
+    "section": "Spatial data models",
+    "text": "Spatial data models\n\nMost common are vector and raster"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#spatial-data-models-1",
+    "href": "Lectures/Introductory_lecture.html#spatial-data-models-1",
+    "title": "Introductions + Why GIS?",
+    "section": "Spatial data models",
+    "text": "Spatial data models\n\nMost common are vector and raster"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#vector-model",
+    "href": "Lectures/Introductory_lecture.html#vector-model",
+    "title": "Introductions + Why GIS?",
+    "section": "Vector model",
+    "text": "Vector model\n\n\n\n\n\nFeatures are stored as discrete points, lines or polygons\n\nAll are combinations of nodes and/or vertices\n\nLocations are recorded as X,Y coordinates"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#something-special-about-the-vector-model-the-attribute-table",
+    "href": "Lectures/Introductory_lecture.html#something-special-about-the-vector-model-the-attribute-table",
+    "title": "Introductions + Why GIS?",
+    "section": "Something special about the vector model: The attribute table",
+    "text": "Something special about the vector model: The attribute table\n\nEach feature – point, line, or polygon – is dynamically linked to the “attribute table” or set of variables\n\nFor example, you could have a dataset of cities, represented as points, and the attribute table might contain characteristics of the city – population, median household income, etc."
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#why-we-like-the-vector-model-and-we-really-do",
+    "href": "Lectures/Introductory_lecture.html#why-we-like-the-vector-model-and-we-really-do",
+    "title": "Introductions + Why GIS?",
+    "section": "Why we like the vector model (and we really do)",
+    "text": "Why we like the vector model (and we really do)\n\nFeatures can be located precisely\nWe can store lots of information (variables or attributes) about each feature\nUseful for many types of map-making\nPerfect for types of analysis, such as areas, lengths, or connections\nUsed a lot in the social sciences"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#raster-model",
+    "href": "Lectures/Introductory_lecture.html#raster-model",
+    "title": "Introductions + Why GIS?",
+    "section": "Raster model",
+    "text": "Raster model\n\n\n\nSub-divides a study area into square pixels – rows and columns\nOnly need the location of the upper left-hand corner and all other locations are implicit, assuming you know your pixel size\nOnly one value is recorded for each pixel\n\nFor example, temperature, precipitation, or land use type"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#raster-model-1",
+    "href": "Lectures/Introductory_lecture.html#raster-model-1",
+    "title": "Introductions + Why GIS?",
+    "section": "Raster model",
+    "text": "Raster model\n\nSo long as the x, y location is georeferenced (placed on the surface of the earth), we can locate each other pixel, too"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#why-we-like-the-raster-model",
+    "href": "Lectures/Introductory_lecture.html#why-we-like-the-raster-model",
+    "title": "Introductions + Why GIS?",
+    "section": "Why we like the raster model",
+    "text": "Why we like the raster model\n\nBest for continuous data\nAnalysis can sometimes be faster\nAnd some types of analysis require raster data\n“Yes, raster is faster, but raster is vaster, and vector just seems more correcter.” – Dana Tomlin\nRemember: pixel size (or resolution) matters!"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#section-2",
+    "href": "Lectures/Introductory_lecture.html#section-2",
+    "title": "Introductions + Why GIS?",
+    "section": "",
+    "text": "Source: Olivia Iles class project"
+  },
+  {
+    "objectID": "Lectures/Introductory_lecture.html#section-3",
+    "href": "Lectures/Introductory_lecture.html#section-3",
+    "title": "Introductions + Why GIS?",
+    "section": "",
+    "text": "Source: Sonya Gurwitt class project"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "What to Expect:\nSummer 2025",
+    "section": "",
+    "text": "This short course introduces students to the fundamentals of GIS: locating, importing, and visualizing spatial data, as well as common spatial analysis methods and approaches. Each day’s activity is organized around short lectures, complemented by hands-on tutorials and independent work that provide structured practice working with data, software, and common spatial methods."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "What to Expect:\nSummer 2025",
+    "section": "Schedule",
+    "text": "Schedule\n\nMonday\n\n9:30–10:00: Introductions\n10:00–11:00: Why GIS?\n11:00–12:30: QGIS tour\n12:30–13:45: Lunch\n13:45–14:30: Important GIS basics\n14:30–17:00: Tutorial 1\n\n\n\nTuesday\n\n9:30–10:00: Recap and question time\n10:00–11:00: Cartography basics\n11:00–12:30: Tutorial 2\n12:30–13:45: Lunch\n13:45–15:30: Tutorial 2 continued\n15:30–16:00: Introduction to spatial analysis, Part 1\n16:00–16:30: Question time and project discussion\n\n\n\nWednesday\n\n9:30–11:00: Tutorial 3\n11:00–11:30: More spatial analysis\n11:30–12:30: Tutorial 4\n12:30–13:45: Lunch\n13:45–15:30: Tutorial 4 continued\n15:30–16:30: Catch-up and progettino consultation\n\n\n\nThursday\nIndependent progettino work\n\n\nFriday\n\n9:30–11:00: Project work\n11:00–12:00: Progettino presentations"
+  },
+  {
+    "objectID": "index.html#progettino",
+    "href": "index.html#progettino",
+    "title": "What to Expect:\nSummer 2025",
+    "section": "Progettino",
+    "text": "Progettino\nThe best way to learn new tools and software applications is through independent work—and if you really want to see how spatial data and methods can be useful in your own research, you’ve got to try it! That’s why a core component of GIS@GSSI is the progettino, a mini-project that you work on over the course of the week and present to the group on Friday morning."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "These materials support the summer course in spatial data, visualization, and GIS in the Regional Science and Economic Geography program at the Gran Sasso Science Institute (GSSI) in L’Aquila, Italy."
+  },
+  {
+    "objectID": "about.html#about-qgisgssi",
+    "href": "about.html#about-qgisgssi",
+    "title": "About",
+    "section": "",
+    "text": "These materials support the summer course in spatial data, visualization, and GIS in the Regional Science and Economic Geography program at the Gran Sasso Science Institute (GSSI) in L’Aquila, Italy."
+  },
+  {
+    "objectID": "about.html#about-your-course-lead-rachel-franklin",
+    "href": "about.html#about-your-course-lead-rachel-franklin",
+    "title": "About",
+    "section": "About your course lead: Rachel Franklin",
+    "text": "About your course lead: Rachel Franklin\nI’m a quantitative human geographer and the new executive director of the Center for Geographic Analysis (CGA) at Harvard University. Before that, I was Professor of Geographical Analysis in the Centre for Urban and Regional Development Studies (CURDS) at Newcastle University and also the group lead for liveability in the Science of Cities and Regions Programme at The Alan Turing Institute, the UK’s national institute for data science and AI.\nI’ve taught spatial analysis GIS to a range of audiences for almost 15 years, including several times at the GSSI, and have taught quantitative and demographic methods for over 20 years.\nYou can find out more about me here."
+  },
+  {
+    "objectID": "about.html#about-these-teaching-materials",
+    "href": "about.html#about-these-teaching-materials",
+    "title": "About",
+    "section": "About these teaching materials",
+    "text": "About these teaching materials\nThese materials are aimed at students who are experts in something other than geography and spatial analysis. The primary goal is twofold: to illustrate the potential and utlity of spatial thinking and methods and to provide a user-friendly introduction to applying spatial thinking and methods.\nThe code and license for all these materials can be found on GitHub ."
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#racial-segregation-in-detroit-michigan",
+    "href": "Lectures/Cartography_lecture.html#racial-segregation-in-detroit-michigan",
+    "title": "Cartography 101",
+    "section": "Racial segregation in Detroit, Michigan",
+    "text": "Racial segregation in Detroit, Michigan\n\nSources: http://www.wired.com/2013/08/how-segregated-is-your-city-this-eye-opening-map-shows-you/?viewall=true; http://demographics.coopercenter.org/DotMap/index.html"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#representing-different-kinds-of-information",
+    "href": "Lectures/Cartography_lecture.html#representing-different-kinds-of-information",
+    "title": "Cartography 101",
+    "section": "Representing different kinds of information",
+    "text": "Representing different kinds of information\nThe way in which we display data on the map needs to match not only the type of data but also the type of feature\n\nNominal – labels\nCategorical – different symbol or color for each category\nOrdinal – we want to use color or symbol size to convey the increase in value that goes with each category\n\nGraduated or proportional symbol maps.\n\n\nNumerical – for points and lines, we use lines thickness or symbol size to express variations in value\n\nFor polygons we use graduated color or choropleth maps\nSingle color that changes in intensity to convey changes in value\nSometimes two colors are used"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#classification-schemes",
+    "href": "Lectures/Cartography_lecture.html#classification-schemes",
+    "title": "Cartography 101",
+    "section": "Classification Schemes",
+    "text": "Classification Schemes\nMapping continuous data means we need a meaningful way to create categories – this is called classification\n\nSimilar to choices that are made in generating a histogram\nHow we allocate values to categories will affect our final map\n\nThis means number of categories\nBut also the classification scheme itself\n\nIdeally you are able to justify your choices (good general advice!)\n\nWhat is the takeaway message you want to convey?\nWho is your audience?"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#types-of-classification",
+    "href": "Lectures/Cartography_lecture.html#types-of-classification",
+    "title": "Cartography 101",
+    "section": "Types of classification",
+    "text": "Types of classification\n\nNatural breaks (Jenks) – looks at the distribution of values and sets the break points at “natural breaks” in the data\nEqual interval – Creates a set number of classes of equal size\nFixed interval – Same as equal interval, except you decide the size of the interval and the number of classes depends on that decision (e.g., by 1,000s)\nQuantile (equal count) – puts the same number of features into each class\nStandard deviation – creates categories based on the number of standard deviations away from the mean\nPretty breaks – Breaks categories at round numbers\nManual – you choose the break points yourself"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#qgis-symbology-interface",
+    "href": "Lectures/Cartography_lecture.html#qgis-symbology-interface",
+    "title": "Cartography 101",
+    "section": "QGIS symbology interface",
+    "text": "QGIS symbology interface"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#what-if-we-look-at-the-histogram",
+    "href": "Lectures/Cartography_lecture.html#what-if-we-look-at-the-histogram",
+    "title": "Cartography 101",
+    "section": "What if we look at the histogram?",
+    "text": "What if we look at the histogram?"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#what-do-we-need-to-think-about",
+    "href": "Lectures/Cartography_lecture.html#what-do-we-need-to-think-about",
+    "title": "Cartography 101",
+    "section": "What do we need to think about?",
+    "text": "What do we need to think about?\n\nMap elements – the pieces of a map that make it a finished (and polished product)\n\nIndividual elements should contribute to conveying information, not detract from it\nLimit clumping together of elements\nLimit use of multiple fonts and colors\n\nMap symbology – the way in which the information the map conveys is portrayed\n\nColors – hue, intensity, and saturation\nSymbols – size and type\n\nBy necessity, maps are selective of the information they show and information is generalized"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#choosing-symbols-and-colors",
+    "href": "Lectures/Cartography_lecture.html#choosing-symbols-and-colors",
+    "title": "Cartography 101",
+    "section": "Choosing symbols and colors",
+    "text": "Choosing symbols and colors\n\nBeauty is in the eye of the beholder, but there are some general guidelines!\nWater and land should not be given unusual colors—e.g., water is blue not red\nIncreased thickness of lines or larger symbols should match increased value\nDarker or more intense colors usually go with higher values\nIf you use a color ramp with two colors, your data should also reflect two extremes in value—for example, in and out migration or voting patterns\nAvoid mixing and matching lots of different patterns on the same map—the eye can’t handle it"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#for-those-who-like-colorcolor-brewer",
+    "href": "Lectures/Cartography_lecture.html#for-those-who-like-colorcolor-brewer",
+    "title": "Cartography 101",
+    "section": "For those who like color—Color Brewer!",
+    "text": "For those who like color—Color Brewer!\n\nSource: https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#what-makes-a-map",
+    "href": "Lectures/Cartography_lecture.html#what-makes-a-map",
+    "title": "Cartography 101",
+    "section": "What makes a map?",
+    "text": "What makes a map?\n\n\n\n\nCartographic elements\n\nMap object\nTitle\nNeatline\nScale bar\nLegend\nNorth arrow\nInset map"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#so-many-ways-to-visualize-information-on-a-map",
+    "href": "Lectures/Cartography_lecture.html#so-many-ways-to-visualize-information-on-a-map",
+    "title": "Cartography 101",
+    "section": "So many ways to visualize information on a map!",
+    "text": "So many ways to visualize information on a map!\n\nThematic Maps – organize and display spatial variation of a single variable\nChoropleth maps – changes in a variable are classified and mapped by some administrative category (e.g. countries or states)\nDasymetric maps – Uses additional information to allocate value within polygons\nIsoline or contour maps – lines delineate areas of similar value. E.g., air pressure or elevation\nReference maps – may display lots of different types of information\n\nTopological maps or atlases\n\nDot maps, picture symbol maps, graduated symbol maps\nNetwork and flow maps – show direction and magnitude of flows\nCartograms—a unit’s display area is determined not by its actual area but by an attribute value"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#choropleth-map",
+    "href": "Lectures/Cartography_lecture.html#choropleth-map",
+    "title": "Cartography 101",
+    "section": "Choropleth map",
+    "text": "Choropleth map\n\nSource: Census Atlas of the U.S."
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#dasymetric-map",
+    "href": "Lectures/Cartography_lecture.html#dasymetric-map",
+    "title": "Cartography 101",
+    "section": "Dasymetric map",
+    "text": "Dasymetric map\n\nSource: https://www.nature.com/articles/s41597-022-01603-z"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#reference-map",
+    "href": "Lectures/Cartography_lecture.html#reference-map",
+    "title": "Cartography 101",
+    "section": "Reference map",
+    "text": "Reference map\n\nSource: https://www.nationsonline.org/oneworld/map/USA/indiana_map.htm"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#topological-map",
+    "href": "Lectures/Cartography_lecture.html#topological-map",
+    "title": "Cartography 101",
+    "section": "Topological map",
+    "text": "Topological map\n\nSource: https://content.tfl.gov.uk/standard-tube-map.pdf"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#dot-density-map",
+    "href": "Lectures/Cartography_lecture.html#dot-density-map",
+    "title": "Cartography 101",
+    "section": "Dot density map",
+    "text": "Dot density map\n\nSource: http://demographics.coopercenter.org/DotMap/index.html"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#a-fun-one-chernoff-faces",
+    "href": "Lectures/Cartography_lecture.html#a-fun-one-chernoff-faces",
+    "title": "Cartography 101",
+    "section": "A fun one: Chernoff faces",
+    "text": "A fun one: Chernoff faces\nFor more information, check out this post.\n\nSource: https://mapdesign.icaci.org/2014/12/mapcarte-353365-life-in-los-angeles-by-eugene-turner-1977/"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#flow-map-a-famous-one",
+    "href": "Lectures/Cartography_lecture.html#flow-map-a-famous-one",
+    "title": "Cartography 101",
+    "section": "Flow map (a famous one!)",
+    "text": "Flow map (a famous one!)\n\nSource: https://en.wikipedia.org/wiki/Charles_Joseph_Minard"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#cartograms",
+    "href": "Lectures/Cartography_lecture.html#cartograms",
+    "title": "Cartography 101",
+    "section": "Cartograms",
+    "text": "Cartograms\n\nSource: https://websites.umich.edu/~mejn/election/2016/"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#cartograms-1",
+    "href": "Lectures/Cartography_lecture.html#cartograms-1",
+    "title": "Cartography 101",
+    "section": "Cartograms",
+    "text": "Cartograms\n\nSource: https://websites.umich.edu/~mejn/election/2016/"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#cartograms-2020-presidential-election-comparison",
+    "href": "Lectures/Cartography_lecture.html#cartograms-2020-presidential-election-comparison",
+    "title": "Cartography 101",
+    "section": "Cartograms: 2020 presidential election comparison",
+    "text": "Cartograms: 2020 presidential election comparison\n\nSource: http://www.viewsoftheworld.net/wp-content/uploads/2020/11/USelection2020Cartogram.png"
+  },
+  {
+    "objectID": "Lectures/Cartography_lecture.html#questions-we-can-ask-about-maps-and-spatial-data",
+    "href": "Lectures/Cartography_lecture.html#questions-we-can-ask-about-maps-and-spatial-data",
+    "title": "Cartography 101",
+    "section": "Questions we can ask about maps and spatial data",
+    "text": "Questions we can ask about maps and spatial data\n\nWhat are the high and low values and where are they?\nDoes there appear to be a relationship between location and value?\nDo similar values appear to be located close together, or clustered? Is another spatial pattern discernible?\nAre there characteristics of areas that appear to correspond with particular sets of values? e.g., coastal or inner city.\nWould the pattern change if we change the scale of analysis? For example, what happens to the spatial pattern if we go from counties to states?"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#spatial-analysis-for-urban-and-regional-analysis",
+    "href": "Lectures/Spatial_analysis_lecture1.html#spatial-analysis-for-urban-and-regional-analysis",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Spatial analysis for urban and regional analysis",
+    "text": "Spatial analysis for urban and regional analysis\nOften we use spatial analysis tools to extract information\n\nLength of paved road in a region\nNumber of universities in a place\nNumber of inhabitants within a distance of a service\nArea within a distance of a road or feature (like a bus stop or metro station)"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#a-variety-of-types-of-spatial-analysis",
+    "href": "Lectures/Spatial_analysis_lecture1.html#a-variety-of-types-of-spatial-analysis",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "A variety of types of spatial analysis",
+    "text": "A variety of types of spatial analysis\nAccording to Longley\n\nQueries and reasoning – no changes are made to the database and no new information is produced\n\ne.g., how many cities within 300km of L’Aquila?\n\nMeasurements – Describing aspects of geographic data, like length, area, or shape\n\nFor example, calculating the size (or area) of a parcel\n\nTransformations – Changing or combining data to create new data, using logical, mathematical, or geometrical rules\nDescriptive summaries – summary statistics for spatial data\nOptimization – Finding the best locations for a set of objects\n\nFor example, best locations for public services\n\nHypothesis testing – Making generalizations about a population from a sample\n\nCould this spatial pattern have occurred by chance?"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#types-of-spatial-analysis",
+    "href": "Lectures/Spatial_analysis_lecture1.html#types-of-spatial-analysis",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Types of spatial analysis",
+    "text": "Types of spatial analysis\ncontinued\n\nWe’ve covered queries and reasoning\nMeasurement is either embedded in feature class information (e.g., length of a line segment) or is straightforwardly calculated in a GIS—this is GIS bread and butter functionality!\nThis lecture focuses on transformations"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#transformations",
+    "href": "Lectures/Spatial_analysis_lecture1.html#transformations",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Transformations",
+    "text": "Transformations\n\nBuffers – Create an area of a specific and constant width around a point, line, or polygon This can be used to identify all objects falling within a certain distance of the original feature\nPoint in polygon – Associates points with polygons\n\nCounts the number of points within a polygon or…Attaches polygon characteristics to points\nThis is usually what people mean when they refer to a spatial join\n\nPolygon overlay – Determining whether two polygons overlap, the extent of their overlap, and what new polygons are created by the overlap\n\nCan be thought of as an intersection or a union of units and information\n\nSpatial interpolation – Estimating the value of a variable for locations where no measurement has occurred. For example, rainfall, temperature, or elevation\n\ne.g., Inverse distance weighting or Kriging\n\nDensity estimation and potential – generates a surface from a set of discrete points"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#qgis-pulldown-menus",
+    "href": "Lectures/Spatial_analysis_lecture1.html#qgis-pulldown-menus",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "QGIS pulldown menus",
+    "text": "QGIS pulldown menus\n\n\nCheck out all the options!"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#qgis-toolbox",
+    "href": "Lectures/Spatial_analysis_lecture1.html#qgis-toolbox",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "QGIS toolbox",
+    "text": "QGIS toolbox\n\n\n\nLocated on the main QGIS toolbar\nCan be overwhelming—take the time to poke around\nMost tools work with a common interface/intuition\n\nPractice makes…comfortable (if not perfect)\n\nSearch is your friend\n\nThe key is to know what tools you are searching for!"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#buffers",
+    "href": "Lectures/Spatial_analysis_lecture1.html#buffers",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Buffers",
+    "text": "Buffers\nCreates a new layer of polygons around a set of input features"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#appealing-way-to-visualise-and-calculate-areas-surrounding-features",
+    "href": "Lectures/Spatial_analysis_lecture1.html#appealing-way-to-visualise-and-calculate-areas-surrounding-features",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Appealing way to visualise and calculate areas surrounding features",
+    "text": "Appealing way to visualise and calculate areas surrounding features"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#appealing-way-to-visualise-and-calculate-areas-surrounding-features-1",
+    "href": "Lectures/Spatial_analysis_lecture1.html#appealing-way-to-visualise-and-calculate-areas-surrounding-features-1",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Appealing way to visualise and calculate areas surrounding features",
+    "text": "Appealing way to visualise and calculate areas surrounding features"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#why-would-we-want-buffers-what-purpose-do-they-serve",
+    "href": "Lectures/Spatial_analysis_lecture1.html#why-would-we-want-buffers-what-purpose-do-they-serve",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Why would we want buffers? What purpose do they serve?",
+    "text": "Why would we want buffers? What purpose do they serve?"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#calculating-how-many-features-fall-into-an-area",
+    "href": "Lectures/Spatial_analysis_lecture1.html#calculating-how-many-features-fall-into-an-area",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Calculating how many features fall into an area",
+    "text": "Calculating how many features fall into an area\nPoint in polygon (aka spatial join)"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#calculating-how-many-features-fall-into-an-area-1",
+    "href": "Lectures/Spatial_analysis_lecture1.html#calculating-how-many-features-fall-into-an-area-1",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Calculating how many features fall into an area",
+    "text": "Calculating how many features fall into an area\nPoint in polygon (aka spatial join)"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#what-if-we-want-to-know-areas-where-two-or-more-layers-overlap",
+    "href": "Lectures/Spatial_analysis_lecture1.html#what-if-we-want-to-know-areas-where-two-or-more-layers-overlap",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "What if we want to know areas where two (or more) layers overlap?",
+    "text": "What if we want to know areas where two (or more) layers overlap?\nIntersect"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#what-if-we-want-to-know-areas-where-two-or-more-layers-overlap-1",
+    "href": "Lectures/Spatial_analysis_lecture1.html#what-if-we-want-to-know-areas-where-two-or-more-layers-overlap-1",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "What if we want to know areas where two (or more) layers overlap?",
+    "text": "What if we want to know areas where two (or more) layers overlap?\nIntersect"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#what-if-we-want-to-know-how-many-people-fall-into-an-area",
+    "href": "Lectures/Spatial_analysis_lecture1.html#what-if-we-want-to-know-how-many-people-fall-into-an-area",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "What if we want to know how many people fall into an area?",
+    "text": "What if we want to know how many people fall into an area?\nBuffers + Intersect (with census area data) for an approximation"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#how-is-this-useful",
+    "href": "Lectures/Spatial_analysis_lecture1.html#how-is-this-useful",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "How is this useful?",
+    "text": "How is this useful?\nWhat if you only want to rent an AirBnb that’s close to water and cultural locations?"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#how-is-this-useful-1",
+    "href": "Lectures/Spatial_analysis_lecture1.html#how-is-this-useful-1",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "How is this useful?",
+    "text": "How is this useful?\nWhat if you only want to rent an AirBnb that’s close to water and cultural locations?"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#grouping-features-together-based-on-a-common-attribute",
+    "href": "Lectures/Spatial_analysis_lecture1.html#grouping-features-together-based-on-a-common-attribute",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Grouping features together, based on a common attribute",
+    "text": "Grouping features together, based on a common attribute\nDissolve"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#combining-polygons",
+    "href": "Lectures/Spatial_analysis_lecture1.html#combining-polygons",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Combining polygons",
+    "text": "Combining polygons\nDissolve example"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#combining-polygons-1",
+    "href": "Lectures/Spatial_analysis_lecture1.html#combining-polygons-1",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Combining polygons",
+    "text": "Combining polygons\nDissolve example 2"
+  },
+  {
+    "objectID": "Lectures/Spatial_analysis_lecture1.html#summary",
+    "href": "Lectures/Spatial_analysis_lecture1.html#summary",
+    "title": "Introduction to spatial analysis (part 1)",
+    "section": "Summary",
+    "text": "Summary\n\nSo many more tools—this is just scratching the surface\nMost of these tools generate a new layer\n\nPay attention to naming AND to where you’re saving!\n\nIf you mess up, you can simply run the tool again\nUsing Help and the internet is key\nIt’s common to need to string together tools to get to a final answer\nLayer names can matter:\n\nNo spaces or strange symbols.\nUse _\nNo starting a layer name with a number (e.g., Pop_2011, not 2011_pop)"
+  },
+  {
+    "objectID": "Pages/Introduction_page.html",
+    "href": "Pages/Introduction_page.html",
+    "title": "Let’s Go!",
+    "section": "",
+    "text": "This morning we’ll get to know each other, talk about how the week will be structured, and get an introduction to thinking spatially, how a GIS can be helpful, and the basics of QGIS.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Let's Go!"
+    ]
+  },
+  {
+    "objectID": "Pages/GIS_basics.html",
+    "href": "Pages/GIS_basics.html",
+    "title": "Important GIS Basics",
+    "section": "",
+    "text": "This morning is another quick session. We’ll talk a bit more about the quirks of QGIS, as well as some basic GIS functionality, before starting on our first tutorial.",
+    "crumbs": [
+      "About",
+      "Monday",
+      "Important GIS Basics"
+    ]
+  },
+  {
+    "objectID": "Pages/Cartography_101.html",
+    "href": "Pages/Cartography_101.html",
+    "title": "Cartography 101",
+    "section": "",
+    "text": "Good morning! Today is a big day! We start with cartography in the morning and transition to spatial analysis in the afternoon.",
+    "crumbs": [
+      "About",
+      "Tuesday",
+      "Cartography 101"
+    ]
+  },
+  {
+    "objectID": "Pages/GIS_commandments.html",
+    "href": "Pages/GIS_commandments.html",
+    "title": "The GIS Commandments",
+    "section": "",
+    "text": "Thou shalt not work from the Downloads folder.\nThou shalt understand how file directories are structured (even if you wish you didn’t need to).\nKnow your projection.\nSave projects early and often!\nThou shalt google (look things up when you have questions).\nEmbrace mistakes (you will make mistakes).",
+    "crumbs": [
+      "About",
+      "Monday",
+      "The GIS Commandments"
+    ]
+  },
+  {
+    "objectID": "Pages/Progettino.html",
+    "href": "Pages/Progettino.html",
+    "title": "Progettino",
+    "section": "",
+    "text": "It’s a packed week, with lots to learn and practice. The purpose of the progettino is to provide space to apply concepts and methods independently, without the support of tutorials.\nYou don’t have much time for this mini-project, so what is expected?\n\nDecide on a topic or question that’s interesting to you.\nLocate relevant data.\nFrame your question or topic spatially—for example, how do density, distance, proximity, or context matter?\nThink about what sorts of methods and approaches might be useful?\nYou don’t have much time, so no need to be over-ambitious! Focus on the achievable and interesting (to you).\nI’m available to talk through ideas!",
+    "crumbs": [
+      "About",
+      "Friday",
+      "Progettino"
+    ]
+  },
+  {
+    "objectID": "Pages/Progettino.html#independent-workexpectations",
+    "href": "Pages/Progettino.html#independent-workexpectations",
+    "title": "Progettino",
+    "section": "",
+    "text": "It’s a packed week, with lots to learn and practice. The purpose of the progettino is to provide space to apply concepts and methods independently, without the support of tutorials.\nYou don’t have much time for this mini-project, so what is expected?\n\nDecide on a topic or question that’s interesting to you.\nLocate relevant data.\nFrame your question or topic spatially—for example, how do density, distance, proximity, or context matter?\nThink about what sorts of methods and approaches might be useful?\nYou don’t have much time, so no need to be over-ambitious! Focus on the achievable and interesting (to you).\nI’m available to talk through ideas!",
+    "crumbs": [
+      "About",
+      "Friday",
+      "Progettino"
+    ]
+  },
+  {
+    "objectID": "Pages/Progettino.html#sharing-with-peers",
+    "href": "Pages/Progettino.html#sharing-with-peers",
+    "title": "Progettino",
+    "section": "Sharing with peers",
+    "text": "Sharing with peers\nOn Friday morning we’ll come together as a group to share what we’ve been working on.\n\nAbout 5 minutes per person.\nNo need for a formal presentation—a map or two is sufficient!\nThis should be a positive process, a chance to reflect on how much you’ve learned, and an opportunity to learn more about your peers’ interests and expertise!",
+    "crumbs": [
+      "About",
+      "Friday",
+      "Progettino"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial2.html",
+    "href": "Pages/Tutorial2.html",
+    "title": "Tutorial 2:\nCartography Basics",
+    "section": "",
+    "text": "With this practical, we work on our formal cartographic expertise and expand our knowledge of QGIS functionality. By the end of this practical, you should know how to:",
+    "crumbs": [
+      "About",
+      "Tuesday",
+      "Tutorial 2: \\\nCartography Basics"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial2.html#first-things-firstsome-preliminaries",
+    "href": "Pages/Tutorial2.html#first-things-firstsome-preliminaries",
+    "title": "Tutorial 2:\nCartography Basics",
+    "section": "First Things First—Some Preliminaries",
+    "text": "First Things First—Some Preliminaries\n\nGet set up with your data: it should still be on your desktop (or wherever you’re saving to). Otherwise, you can re-download.\nStart a new QGIS project and navigate to your data. Add the following layers: AirBnbs, Waterways, Cultural Locations, and Neighbourhoods. Save your project ( always save!!!)",
+    "crumbs": [
+      "About",
+      "Tuesday",
+      "Tutorial 2: \\\nCartography Basics"
+    ]
+  },
+  {
+    "objectID": "Pages/Tutorial2.html#side-by-side-maps-of-expensive-airbnbs-and-cultural-locations",
+    "href": "Pages/Tutorial2.html#side-by-side-maps-of-expensive-airbnbs-and-cultural-locations",
+    "title": "Tutorial 2:\nCartography Basics",
+    "section": "Side-by-Side Maps of Expensive AirBnbs and Cultural Locations",
+    "text": "Side-by-Side Maps of Expensive AirBnbs and Cultural Locations\n(here, we’ll design one layout containing two maps)\n\nFirst off, let’s create a layer of AirBnbs that are the entire house/apartment and that cost at least 5000/night.\n\n\nUse an attribute query to select all AirBnbs that are the entire house/apt. You may still have this layer (“AirBnb_entire_home”)—feel free to open it and use it; otherwise, re-create using steps in the first Tutorial.\nUsing the “AirBnb_entire_home” layer, we want to select AirBnbs that cost 5000 or more per night (there should be 56) and then create a new layer (Export&gt;Save Selected Features), called AirBnb_5000_or_more_entire_home.\n\n\n\n\n\n\n\nSymbolisation of AirBnbs: In your new layer, open Properties and go to Symbology. To visualise a continuous variable such as price, we need to select Graduated from the symbology options at the top. For Value, scroll down to the “price” variable.\nNow, for symbolisation, we have a choice between color and symbol size. In fact, there are many choices, including symbol choice, number of classes, and classification scheme. Work through your choices and then click Classify at the bottom.\n\n\n\n\n\n\n\nNow spend some time choosing symbology for your Waterways and Neighbourhoods background colours (fill and border). You’re looking for an appealing combination of colours and symbology that still foregrounds the AirBnb data.\nLayout: Create a new print layout  and insert a new map window  to take up about half your page in landscape view (see below). Scale of around 450,000 is about right.\n\n\n\n\n\n\n Save!\n\nNow use the options on the left of the Layout window to add a Legend, North arrow, and scale bar. Note that each of these items has its own Properties, which can be viewed on the right of your screen. These include fonts, font size, and many other choices. Take your time exploring.\n Hint: Legends can be edited by turning off “Auto Update” and then deleting unused layers and changing variable names.\n\n\n\n\n\n\n\nThis is half of the map layout. When we go back to the main window, however, any changes we make to layers will automatically refresh in this map window.\nTo avoid this, under the Map’s main properties and Layer, click “Lock Layers” and “Lock Styles for Layers”.\n\n\n\n\n\n\n\nNow go back to the main QGIS window, turn off the AirBnb layer, and turn on Cultural Locations.\nAlmost there! Symbolise your Cultural Locations layer, keeping in mind you want your choices to match well with the AirBnb map.\nCreate a second map in your layout that shows Cultural Locations and Neighbourhoods.\nFinalise and export your map layout. Your final map should include:\n\n\nTitle\nYour name\nLegends, scale bars, and North arrows for both maps\nSensible names for variables in your legend\nMap windows aligned and of the same size\n\n Hint: these tools in layout view assist with alignment, etc. \n\nBoth maps at the same scale",
+    "crumbs": [
+      "About",
+      "Tuesday",
+      "Tutorial 2: \\\nCartography Basics"
+    ]
+  },
+  {
+    "objectID": "Pages/More_spatial_analysis.html",
+    "href": "Pages/More_spatial_analysis.html",
+    "title": "More Spatial Analysis",
+    "section": "",
+    "text": "This lecture covers a bit more on common GIS spatial analysis tools and provides a quick introduction to spatial statistics and GeoDa.",
+    "crumbs": [
+      "About",
+      "Wednesday",
+      "More Spatial Analysis"
+    ]
+  },
+  {
+    "objectID": "Pages/Intro_spatial_analysis.html",
+    "href": "Pages/Intro_spatial_analysis.html",
+    "title": "Introduction to Spatial Analysis",
+    "section": "",
+    "text": "With this lecture we transition to an entire new arena of GIS capability: spatial analysis. Exciting!",
+    "crumbs": [
+      "About",
+      "Tuesday",
+      "Introduction to Spatial Analysis"
+    ]
+  }
+]

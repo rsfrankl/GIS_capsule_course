@@ -1,0 +1,10 @@
+---
+title: "Important GIS Basics"
+css: /Styles/website_styles.scss
+---
+
+This morning is another quick session. We'll talk a bit more about the quirks of QGIS, as well as some basic GIS functionality, before starting on our first tutorial. {{< fa face-smile >}}
+
+<iframe class="slide-deck" src="/Lectures/GIS_basics_lecture.html" height="420" width="750" style="border: 1px solid #2e3846;">
+
+</iframe>

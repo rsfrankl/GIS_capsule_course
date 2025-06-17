@@ -1,0 +1,55 @@
+---
+title: | 
+  What to Expect: \
+  Summer 2025
+about:
+  template: marquee
+  image: images/chalkboard2.jpg
+  image-shape: rounded
+css: Styles/website_styles.scss
+---
+
+This short course introduces students to the fundamentals of GIS: locating, importing, and visualizing spatial data, as well as common spatial analysis methods and approaches. Each day’s activity is organized around short lectures, complemented by hands-on tutorials and independent work that provide structured practice working with data, software, and common spatial methods.
+
+## Schedule
+
+### Monday
+
+- 9:30--10:00: Introductions
+- 10:00--11:00: [Why GIS?](Pages/Introduction_page.qmd)
+- 11:00--12:30: [QGIS tour](Pages/Getting_started_QGIS.qmd)
+- 12:30--13:45: Lunch
+- 13:45--14:30: [Important GIS basics](Pages/GIS_basics.qmd)
+- 14:30--17:00: [Tutorial 1](Pages/Tutorial1.qmd)
+
+### Tuesday
+
+- 9:30--10:00: Recap and question time
+- 10:00--11:00: [Cartography basics](Pages/Cartography_101.qmd)
+- 11:00--12:30: [Tutorial 2](Pages/Tutorial2.qmd)
+- 12:30--13:45: Lunch
+- 13:45--15:30: [Tutorial 2](Pages/Tutorial2.qmd) continued
+- 15:30--16:00: [Introduction to spatial analysis, Part 1](Pages/Intro_spatial_analysis.qmd)
+- 16:00--16:30: Question time and project discussion
+
+### Wednesday
+
+- 9:30--11:00: [Tutorial 3](Pages/Tutorial3.qmd)
+- 11:00--11:30: [More spatial analysis](Pages/More_spatial_analysis.qmd)
+- 11:30--12:30: [Tutorial 4](Pages/Tutorial4.qmd)
+- 12:30--13:45: Lunch
+- 13:45--15:30: [Tutorial 4](Pages/Tutorial4.qmd) continued
+- 15:30--16:30: Catch-up and *progettino* consultation
+
+### Thursday
+
+*Independent progettino work*
+
+### Friday
+
+- 9:30--11:00: Project work
+- 11:00--12:00: *Progettino* presentations
+
+## Progettino
+
+The best way to learn new tools and software applications is through independent work—and if you really want to see how spatial data and methods can be useful in your own research, you've got to try it! That's why a core component of GIS\@GSSI is the [*progettino*](Pages/Progettino.qmd), a mini-project that you work on over the course of the week and present to the group on Friday morning.
