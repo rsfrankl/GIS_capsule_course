@@ -1,7 +1,7 @@
 ---
 title: | 
   What to Expect: \
-  Summer 2025
+  June 2026
 about:
   template: marquee
   image: images/chalkboard2.jpg
@@ -18,37 +18,34 @@ This short course introduces students to the fundamentals of GIS: locating, impo
 - 9:30--10:00: Introductions
 - 10:00--11:00: [Why GIS?](Pages/Introduction_page.qmd)
 - 11:00--12:30: [QGIS tour](Pages/Getting_started_QGIS.qmd)
-- 12:30--13:45: Lunch
-- 13:45--14:30: [Important GIS basics](Pages/GIS_basics.qmd)
+- 12:30--14:00: Lunch
+- 14:00--14:30: [Important GIS basics](Pages/GIS_basics.qmd)
 - 14:30--17:00: [Tutorial 1](Pages/Tutorial1.qmd)
 
 ### Tuesday
 
+- Holiday: Festa della Repubblica!
+
+### Wednesday
+
 - 9:30--10:00: Recap and question time
 - 10:00--11:00: [Cartography basics](Pages/Cartography_101.qmd)
 - 11:00--12:30: [Tutorial 2](Pages/Tutorial2.qmd)
-- 12:30--13:45: Lunch
-- 13:45--15:30: [Tutorial 2](Pages/Tutorial2.qmd) continued
-- 15:30--16:00: [Introduction to spatial analysis, Part 1](Pages/Intro_spatial_analysis.qmd)
-- 16:00--16:30: Question time and project discussion
+- 12:30--14:00: Lunch
+- 14:00--15:30: [Tutorial 2](Pages/Tutorial2.qmd) continued
+- 15:30--17:00: [Introduction to spatial analysis, Part 1](Pages/Intro_spatial_analysis.qmd)
 
-### Wednesday
+### Thursday
 
 - 9:30--11:00: [Tutorial 3](Pages/Tutorial3.qmd)
 - 11:00--11:30: [More spatial analysis](Pages/More_spatial_analysis.qmd)
 - 11:30--12:30: [Tutorial 4](Pages/Tutorial4.qmd)
-- 12:30--13:45: Lunch
-- 13:45--15:30: [Tutorial 4](Pages/Tutorial4.qmd) continued
-- 15:30--16:30: Catch-up and *progettino* consultation
-
-### Thursday
-
-*Independent progettino work*
+- 12:30--14:00: Lunch
+- 14:00--17:00: [Tutorial 4](Pages/Tutorial4.qmd) continued
 
 ### Friday
 
-- 9:30--11:00: Project work
-- 11:00--12:00: *Progettino* presentations
+- 9:00--11:00: Project work and *Progettino* presentations
 
 ## Progettino
 

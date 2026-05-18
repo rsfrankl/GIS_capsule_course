@@ -22,36 +22,36 @@ website:
     search: true
     border: true
     contents:
-      - section: "Monday"
+      - section: "**Monday**"
         contents:
           - Pages/Introduction_page.qmd
           - Pages/Getting_started_QGIS.qmd
           - Pages/GIS_commandments.qmd
           - Pages/GIS_basics.qmd
           - Pages/Tutorial1.qmd
-      - section: "Tuesday"
+      - section: "**Tuesday**"
         contents:
+          - Pages/Thursday.qmd
+      - section: "**Wednesday**"
+        contents: 
           - Pages/Cartography_101.qmd
           - Pages/Tutorial2.qmd
           - Pages/Tutorial2_part2.qmd
           - Pages/Intro_spatial_analysis.qmd
-      - section: "Wednesday"
-        contents: 
+      - section: "**Thursday**"
+        contents:
           - Pages/Tutorial3.qmd
           - Pages/More_spatial_analysis.qmd
           - Pages/Tutorial4.qmd
-      - section: "Thursday"
-        contents:
-          - Pages/Thursday.qmd
-      - section: "Friday"
+      - section: "**Friday**"
         contents:
           - Pages/Progettino.qmd
-      - section: "Data"
+      - section: "**Data**"
         contents:
           - Pages/Data.qmd
           - Pages/Finding_spatial_data.qmd
   page-footer:
-    left: "Rachel Franklin, copyright 2025"
+    left: "Rachel Franklin, copyright 2026"
     right: "Built with brute force {{< fa dumbbell >}} and [Quarto](https://quarto.org)"
 
 format:
@@ -61,5 +61,5 @@ format:
     toc: true
     page-layout: full
 
-editor: visual
+editor: source
 

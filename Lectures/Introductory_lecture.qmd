@@ -6,26 +6,26 @@ format:
   revealjs:
     theme: [serif, GSSI_presentation_styles.scss]
     center: true
-    footer: "GSSI | Franklin | June 2025"
+    footer: "GSSI | Franklin | June 2026"
     slide-number: true
-editor: visual
+editor: source
 ---
 
 # Introductions
 
--   Who am I?
--   Who are you?
+- Who am I?
+- Who are you?
 
 # Agenda for today
 
--   Why GIS for economic geography and regional science?
-    -   Research example: depopulation
--   The basics of GIS
-    -   Why do we need a GIS?
-    -   What is a GIS?
-    -   Visualizing data in a GIS
-    -   Finding spatial data
--   A few more examples
+- Why GIS for economic geography and regional science?
+  - Research example: depopulation
+- The basics of GIS
+  - Why do we need a GIS?
+  - What is a GIS?
+  - Visualizing data in a GIS
+  - Finding spatial data
+- A few more examples
 
 # An example: US depopulation
 
@@ -61,18 +61,18 @@ editor: visual
 
 ## Some takeaways
 
--   Understanding local population change requires a contextual approach, such as the historical patterns of change and the experiences of surrounding regions
--   Our typology approach, which groups the patterns of population changes for both individual areas and their neighboring regions over a span of 70 years, provides a detailed understanding of how depopulation has spatially unfolded in the United States
--   GIS underpins this analysis, even if methods are more geographic data science
+- Understanding local population change requires a contextual approach, such as the historical patterns of change and the experiences of surrounding regions
+- Our typology approach, which groups the patterns of population changes for both individual areas and their neighboring regions over a span of 70 years, provides a detailed understanding of how depopulation has spatially unfolded in the United States
+- GIS underpins this analysis, even if methods are more geographic data science
 
 # Thinking spatially
 
 ## Common kinds of spatial questions
 
--   *How does a variable or phenomenon vary over space (e.g. income)?* (Can be answered with a map)
--   *How does distance to university influence innovation or entrepreneurship?* (Can be answered using traditional statistical software, with spatial variables created using GIS)
--   *What is the spatial distribution of crime in a given city?* (Can be answered with maps and descriptive spatial statistics)
--   *How are business success and neighborhood characteristics related?* (Can be answered with spatial statistics and models)
+- *How does a variable or phenomenon vary over space (e.g. income)?* (Can be answered with a map)
+- *How does distance to university influence innovation or entrepreneurship?* (Can be answered using traditional statistical software, with spatial variables created using GIS)
+- *What is the spatial distribution of crime in a given city?* (Can be answered with maps and descriptive spatial statistics)
+- *How are business success and neighborhood characteristics related?* (Can be answered with spatial statistics and models)
 
 ## Early spatial analysis example: John Snow’s 1854 Cholera Map
 
@@ -80,13 +80,13 @@ editor: visual
 
 ## What can we do with a GIS?
 
--   **Data visualization** -- for example, exploratory analysis or cartography
--   **Explore geographic coincidence** -- for example, how many new firms in a region
--   **Calculate geometries** -- for example, length of road in an area, or the center of a polygon
--   **Identification of spatial patterns** -- for example, clusters or hot spots
--   **Finding spatial relationships** -- for example, measuring exposure, accessibility, or market areas
--   **Calculating spatial variables** -- for example, distance or proximity
--   **Estimating values or density** -- for example, interpolation
+- **Data visualization** -- for example, exploratory analysis or cartography
+- **Explore geographic coincidence** -- for example, how many new firms in a region
+- **Calculate geometries** -- for example, length of road in an area, or the center of a polygon
+- **Identification of spatial patterns** -- for example, clusters or hot spots
+- **Finding spatial relationships** -- for example, measuring exposure, accessibility, or market areas
+- **Calculating spatial variables** -- for example, distance or proximity
+- **Estimating values or density** -- for example, interpolation
 
 ## There are so many ways to think about space
 
@@ -100,21 +100,21 @@ editor: visual
 
 ## Organizing spatial data in a GIS
 
--   A GIS doesn’t save information as maps
-    -   Rather, the GIS stores information on object location and relation to other objects and in space
--   Things to be aware of:
-    -   Your spatial data model
-    -   The relationships your objects have with each other in the real world
-        -   e.g., street intersections or shared regional borders
-        -   Referred to as “topology”
+- A GIS doesn’t save information as maps
+  - Rather, the GIS stores information on object location and relation to other objects and in space
+- Things to be aware of:
+  - Your spatial data model
+  - The relationships your objects have with each other in the real world
+    - e.g., street intersections or shared regional borders
+    - Referred to as “topology”
 
 ## Spatial data models
 
--   Most common are **vector** and **raster** ![](images_lectures/data_models){fig-align="center"}
+- Most common are **vector** and **raster** ![](images_lectures/data_models){fig-align="center"}
 
 ## Spatial data models
 
--   Most common are **vector** and **raster** ![](images_lectures/data_models_example){fig-align="center"}
+- Most common are **vector** and **raster** ![](images_lectures/data_models_example){fig-align="center"}
 
 ## Vector model
 
@@ -124,35 +124,35 @@ editor: visual
 :::
 
 ::: {.column width="30%"}
--   Features are stored as discrete **points**, **lines** or **polygons**
-    -   All are combinations of nodes and/or vertices
--   Locations are recorded as X,Y coordinates
+- Features are stored as discrete **points**, **lines** or **polygons**
+  - All are combinations of nodes and/or vertices
+- Locations are recorded as X,Y coordinates
 :::
 :::::
 
 ## Something special about the vector model: The attribute table
 
--   Each feature – point, line, or polygon – is dynamically linked to the “**attribute table**” or set of variables
-    -   For example, you could have a dataset of cities, represented as points, and the attribute table might contain characteristics of the city – population, median household income, etc.
+- Each feature – point, line, or polygon – is dynamically linked to the “**attribute table**” or set of variables
+  - For example, you could have a dataset of cities, represented as points, and the attribute table might contain characteristics of the city – population, median household income, etc.
 
 ![](images_lectures/attribute_table){width="60%" fig-align="center"}
 
 ## Why we like the vector model (and we really do)
 
--   Features can be located precisely
--   We can store lots of information (variables or attributes) about each feature
--   Useful for many types of map-making
--   Perfect for types of analysis, such as areas, lengths, or connections
--   Used **a lot** in the social sciences
+- Features can be located precisely
+- We can store lots of information (variables or attributes) about each feature
+- Useful for many types of map-making
+- Perfect for types of analysis, such as areas, lengths, or connections
+- Used **a lot** in the social sciences
 
 ## Raster model
 
 ::::: columns
 ::: {.column width="35%"}
--   Sub-divides a study area into square pixels – rows and columns
--   Only need the location of the upper left-hand corner and all other locations are implicit, assuming you know your pixel size
--   Only one value is recorded for each pixel
-    -   For example, temperature, precipitation, or land use type
+- Sub-divides a study area into square pixels – rows and columns
+- Only need the location of the upper left-hand corner and all other locations are implicit, assuming you know your pixel size
+- Only one value is recorded for each pixel
+  - For example, temperature, precipitation, or land use type
 :::
 
 ::: {.column width="65%"}
@@ -162,17 +162,17 @@ editor: visual
 
 ## Raster model
 
--   So long as the x, y location is georeferenced (placed on the surface of the earth), we can locate each other pixel, too
+- So long as the x, y location is georeferenced (placed on the surface of the earth), we can locate each other pixel, too
 
 ![](images_lectures/raster_georef){fig-align="center"}
 
 ## Why we like the raster model
 
--   Best for **continuous data**
--   Analysis can sometimes be faster
--   And some types of analysis require raster data
--   “Yes, raster is faster, but raster is vaster, and vector just seems more correcter.” – Dana Tomlin
--   Remember: pixel size (or **resolution**) matters!
+- Best for **continuous data**
+- Analysis can sometimes be faster
+- And some types of analysis require raster data
+- “Yes, raster is faster, but raster is vaster, and vector just seems more correcter.” – Dana Tomlin
+- Remember: pixel size (or **resolution**) matters!
 
 # A couple other examples
 

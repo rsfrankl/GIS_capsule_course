@@ -6,16 +6,16 @@ format:
   revealjs:
     theme: [serif, GSSI_presentation_styles.scss]
     center: true
-    footer: "GSSI | Franklin | June 2025"
+    footer: "GSSI | Franklin | June 2026"
     slide-number: true
-editor: visual
+editor: source
 ---
 
 # Goals for today's session
 
--   Understand basic QGIS functionality: what is where, what it does, and why
--   Get comfortable with QGIS projects and data management
--   Know how to change layer symbology
+- Understand basic QGIS functionality: what is where, what it does, and why
+- Get comfortable with QGIS projects and data management
+- Know how to change layer symbology
 
 # First, a bit of QGIS housekeeping
 
@@ -29,90 +29,90 @@ editor: visual
 
 ## QGIS common files formats
 
--   Vector data are typically stored as **shapefiles** or as elements of a **GeoPackage**, although other formats exist
-    -   Shapefiles are a classic spatial data format, typically recognized by other GIS software applications and this is the term often used to refer to spatial data
-    -   GeoPackages are containers that can include layers, but also raster data and even spreadsheets (e.g. csv) data
--   Neither shapefiles nor GeoPackages will be recognizable as spatial data in Windows/Finder
+- Vector data are typically stored as **shapefiles** or as elements of a **GeoPackage**, although other formats exist
+  - Shapefiles are a classic spatial data format, typically recognized by other GIS software applications and this is the term often used to refer to spatial data
+  - GeoPackages are containers that can include layers, but also raster data and even spreadsheets (e.g. csv) data
+- Neither shapefiles nor GeoPackages will be recognizable as spatial data in Windows/Finder
 
 ## Some basic GIS rules
 
 **Rule #1**: Don’t use Windows/Finder to copy or move individual files!
 
--   You can copy and paste folders, but pay attention to file directory paths
+- You can copy and paste folders, but pay attention to file directory paths
 
 ## Some basic GIS rules
 
 **Rule #2**: When you do work in QGIS, your efforts are saved as a project
 
--   Projects link to the data layers you’ve added, but do not actually include those layers---those stay in their original location and can be used by multiple projects at once
--   If you copy your project to another location, without moving the individual layers as well, your project will be empty when you open it
+- Projects link to the data layers you’ve added, but do not actually include those layers---those stay in their original location and can be used by multiple projects at once
+- If you copy your project to another location, without moving the individual layers as well, your project will be empty when you open it
 
 ## Some basic GIS rules
 
 **Rule #3**: How we name variables, layers, and folders can matter
 
--   No spaces in folder or file names
--   Instead use \_
--   Don’t start variable names or file names with numbers
-    -   So: pop_1990 instead of 1990_pop
--   Avoid strange symbols in file names and folders (& or \*, for example)
+- No spaces in folder or file names
+- Instead use \_
+- Don’t start variable names or file names with numbers
+  - So: pop_1990 instead of 1990_pop
+- Avoid strange symbols in file names and folders (& or \*, for example)
 
 # Additional GIS functionality
 
 ## Yesterday we explored some basics
 
--   Adding layers
--   Changing symbology
+- Adding layers
+- Changing symbology
 
 ## Other basic stuff
 
--   QGIS pulldown menus and toolbars
-    -   Especially navigation ![](images_lectures/QGIS_navigation){width="60%"}
--   Panel and toolbar visibility is controlled via View\>
--   Save often!
+- QGIS pulldown menus and toolbars
+  - Especially navigation ![](images_lectures/QGIS_navigation){width="60%"}
+- Panel and toolbar visibility is controlled via View\>
+- Save often!
 
 ## Querying a database
 
--   Attribute queries create a subset of records or features that meet the query criteria
-    -   Can be simple, like “Find L’Aquila”
--   This can be done by sorting, browsing, or searching
--   Or selecting features that meet particular criteria (like minimum city size)
--   Once we’ve created our selection we can:
-    -   Generate summary statistics
-    -   Create new layer or shapefile
-    -   Create new variables that label features as having a particular characteristic
+- Attribute queries create a subset of records or features that meet the query criteria
+  - Can be simple, like “Find L’Aquila”
+- This can be done by sorting, browsing, or searching
+- Or selecting features that meet particular criteria (like minimum city size)
+- Once we’ve created our selection we can:
+  - Generate summary statistics
+  - Create new layer or shapefile
+  - Create new variables that label features as having a particular characteristic
 
 ## Attribute queries
 
--   Remember: vector data have attribute tables, often containing useful information!
--   Structured Query Language (SQL)
-    -   Common database query language
-    -   A logical expression that generates a selected set of records
-        -   For example, all cities larger than 50,000 inhabitants
-        -   Or all “highly active” volcanoes
-    -   We can then “summarize” information based on our selected set of cities --- e.g. median income for all cities greater than 50,000 inhabitants
--   In QGIS: "Select features by expression"
+- Remember: vector data have attribute tables, often containing useful information!
+- Structured Query Language (SQL)
+  - Common database query language
+  - A logical expression that generates a selected set of records
+    - For example, all cities larger than 50,000 inhabitants
+    - Or all “highly active” volcanoes
+  - We can then “summarize” information based on our selected set of cities --- e.g. median income for all cities greater than 50,000 inhabitants
+- In QGIS: "Select features by expression"
 
 ## Spatial queries
 
--   Spatial queries also generate a subset of features, but not based on their attribute characteristics
-    -   Instead, we’re interested in their spatial characteristics
-    -   For example, all housing units inside a neighborhood
--   Common types of spatial queries:
-    -   Containment – All the businesses in a particular region
-    -   Intersection – All the Italian provinces that touch the coastline
-        -   Can also be features that overlap or cross features from another layer
--   Interactive selection – Can be done via table or map
--   In QGIS: "select by location" and "select within distance" ![](images_lectures/Select_location){width="50"}
+- Spatial queries also generate a subset of features, but not based on their attribute characteristics
+  - Instead, we’re interested in their spatial characteristics
+  - For example, all housing units inside a neighborhood
+- Common types of spatial queries:
+  - Containment – All the businesses in a particular region
+  - Intersection – All the Italian provinces that touch the coastline
+    - Can also be features that overlap or cross features from another layer
+- Interactive selection – Can be done via table or map
+- In QGIS: "select by location" and "select within distance" ![](images_lectures/Select_location){width="50"}
 
 ## Tabular joins
 
--   Used **A LOT** to work with spreadsheet data containing information for geographical areas
--   Tables are joined based on a common attribute
--   This is how one table’s information is matched to the corresponding table’s
--   In QGIS, the column you use to join tables needs to be identical and the same data type---but the same variable name is **not** necessary
--   In QGIS: Joins interface accessed from layer properties
--   Standardized codes are our savior: using names to join data tables can be problematic if name spellings vary
+- Used **A LOT** to work with spreadsheet data containing information for geographical areas
+- Tables are joined based on a common attribute
+- This is how one table’s information is matched to the corresponding table’s
+- In QGIS, the column you use to join tables needs to be identical and the same data type---but the same variable name is **not** necessary
+- In QGIS: Joins interface accessed from layer properties
+- Standardized codes are our savior: using names to join data tables can be problematic if name spellings vary
 
 ## Tabular joins
 
@@ -120,9 +120,9 @@ editor: visual
 
 ## Spatial joins
 
--   Best thought of as a spatial analysis method: combines layers to create new information, based on location
-    -   Number of schools in a neighborhood, for example
--   Output is a new layer or feature class
--   What type of spatial join we do depends on what types of features we’re working with
+- Best thought of as a spatial analysis method: combines layers to create new information, based on location
+  - Number of schools in a neighborhood, for example
+- Output is a new layer or feature class
+- What type of spatial join we do depends on what types of features we’re working with
 
 # Next up: Tutorial 1!
