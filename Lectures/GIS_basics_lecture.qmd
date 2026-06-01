@@ -59,7 +59,7 @@ editor: source
 
 # Additional GIS functionality
 
-## Yesterday we explored some basics
+## This morning we explored some basics
 
 - Adding layers
 - Changing symbology

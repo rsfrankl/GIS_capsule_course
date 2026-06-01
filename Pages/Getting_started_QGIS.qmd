@@ -19,7 +19,7 @@ It's the 21st century---why are we using a desktop GUI-based software program? A
 
 This week, all of our hands-on practicals will use QGIS. I prefer QGIS because it's *free* and runs locally on both Windows and Macs.
 
--   From the [QGIS site](https://www.qgis.org/en/site/), choose your operating system and download the **LTR version** of QGIS---3.40.7 Bratislava as of June 2025. **Note** that this is *not* the most recent version of QGIS; we want the more stable LTR.
+-   From the [QGIS site](https://www.qgis.org/en/site/), choose your operating system and download the **LTR version** of QGIS---3.44 Solothurn as of June 2026. **Note** that this is *not* the most recent version of QGIS; we want the more stable LTR.
 
     -   For Mac users, you may need to right click on the app from your Applications folder to force QGIS to open the first time. For newer Mac OS, you may also need to navigate to System Settings \> Privacy & Security and allow QGIS under "Security." You'll only need to do this once.
 
