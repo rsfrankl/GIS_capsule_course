@@ -164,23 +164,23 @@ Cartographic elements
 
 ## Choropleth map
 
-![Source: Census Atlas of the U.S.](images_lectures/poverty_map){fig-align="center"}
+![Source: Census Atlas of the U.S.](images_lectures/poverty_map.png){fig-align="center"}
 
 ## Dasymetric map
 
-![Source: https://www.nature.com/articles/s41597-022-01603-z](images_lectures/dasymetric_map){fig-align="center"}
+![Source: https://www.nature.com/articles/s41597-022-01603-z](images_lectures/dasymetric_map.png){fig-align="center"}
 
 ## Reference map
 
-![Source: https://www.nationsonline.org/oneworld/map/USA/indiana_map.htm](images_lectures/reference_map){fig-align="center"}
+![Source: https://www.nationsonline.org/oneworld/map/USA/indiana_map.htm](images_lectures/reference_map.png){fig-align="center"}
 
 ## Topological map
 
-![Source: https://content.tfl.gov.uk/standard-tube-map.pdf](images_lectures/topological_map){fig-align="center"}
+![Source: https://content.tfl.gov.uk/standard-tube-map.pdf](images_lectures/topological_map.png){fig-align="center"}
 
 ## Dot density map
 
-![Source: http://demographics.coopercenter.org/DotMap/index.html](images_lectures/dot_density_map){fig-align="center"}
+![Source: http://demographics.coopercenter.org/DotMap/index.html](images_lectures/dot_density_map.png){fig-align="center"}
 
 ## A fun one: Chernoff faces
 
