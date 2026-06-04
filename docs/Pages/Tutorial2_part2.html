@@ -385,8 +385,13 @@ Even More Spatial Analysis</span></a>
 </div>
 <ul>
 <li><p>To see if the join worked, open the layer attribute table and scroll to the end. You should see the TFR_2020 variable from the csv table appended at the end. (you can also go directly to <code>Symbology</code> and map the TFR variable)</p>
-<p><i class="fa-solid fa-circle-exclamation" aria-label="circle-exclamation"></i> Important note: No new data have been created! <strong>If you are happy with the join, right click on the layer and choose Export&gt;Save Features As…</strong> and save a new layer in your <code>GeoPackage</code> called NUTS2_TFR_2020. The new layer should be automatically added to your project.</p></li>
+<p><i class="fa-solid fa-circle-exclamation" aria-label="circle-exclamation"></i> Important note: No new data have been created! <strong>If you are happy with the join, right click on the layer and choose Export&gt;Save Features As…</strong> and save a new layer in your <code>GeoPackage</code> called NUTS2_TFR_2020. The new layer should be automatically added to your project. <strong>If you receive an error</strong> on exporting related to the FID (e.g., OGR error: Wrong field type for FID) then delete the fid variable in the export interface. See image. This should solve the issue.</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="page_images/fid_error.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
 <ol start="8" type="1">
 <li>Now we are ready to classify and symbolise the data and then make a map!</li>
 </ol>

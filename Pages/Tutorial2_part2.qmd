@@ -43,6 +43,8 @@ This bonus practical provides some additional practice mapping and also illustra
 
 -   To see if the join worked, open the layer attribute table and scroll to the end. You should see the TFR_2020 variable from the csv table appended at the end. (you can also go directly to `Symbology` and map the TFR variable)
 
-    {{< fa circle-exclamation >}} Important note: No new data have been created! **If you are happy with the join, right click on the layer and choose Export\>Save Features As…** and save a new layer in your `GeoPackage` called NUTS2_TFR_2020. The new layer should be automatically added to your project.
+    {{< fa circle-exclamation >}} Important note: No new data have been created! **If you are happy with the join, right click on the layer and choose Export\>Save Features As…** and save a new layer in your `GeoPackage` called NUTS2_TFR_2020. The new layer should be automatically added to your project. **If you receive an error** on exporting related to the FID (e.g., OGR error: Wrong field type for FID) then delete the fid variable in the export interface. See image. This should solve the issue.
+
+![](page_images/fid_error.png){width="50%" fig-align="center"}
 
 8.  Now we are ready to classify and symbolise the data and then make a map!
